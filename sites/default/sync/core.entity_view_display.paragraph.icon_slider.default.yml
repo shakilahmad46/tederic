@@ -1,0 +1,95 @@
+uuid: 02f0338f-de03-4ce9-b515-4c769a3e3e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_slider.field_icon_image_1
+    - field.field.paragraph.icon_slider.field_icon_image_2
+    - field.field.paragraph.icon_slider.field_icon_image_3
+    - field.field.paragraph.icon_slider.field_icon_subtitle_1
+    - field.field.paragraph.icon_slider.field_icon_subtitle_2
+    - field.field.paragraph.icon_slider.field_icon_subtitle_3
+    - field.field.paragraph.icon_slider.field_icon_title_1
+    - field.field.paragraph.icon_slider.field_icon_title_2
+    - field.field.paragraph.icon_slider.field_icon_title_3
+    - paragraphs.paragraphs_type.icon_slider
+  module:
+    - image
+id: paragraph.icon_slider.default
+targetEntityType: paragraph
+bundle: icon_slider
+mode: default
+content:
+  field_icon_image_1:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_icon_image_2:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_icon_image_3:
+    weight: 10
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_icon_subtitle_1:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_icon_subtitle_2:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_icon_subtitle_3:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_icon_title_1:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon_title_2:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon_title_3:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

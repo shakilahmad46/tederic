@@ -1,0 +1,57 @@
+uuid: b620ace7-1b75-47ec-afcf-2a72f9181fed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_section.field_link
+    - field.field.paragraph.news_section.field_popular_view
+    - field.field.paragraph.news_section.field_select_view
+    - field.field.paragraph.news_section.field_title
+    - paragraphs.paragraphs_type.news_section
+  module:
+    - link
+    - viewsreference
+id: paragraph.news_section.default
+targetEntityType: paragraph
+bundle: news_section
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_popular_view:
+    weight: 3
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_select_view:
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,199 @@
+uuid: d70e397c-e480-4de2-aede-6c68f629de68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card
+    - paragraphs.paragraphs_type.card_regular_page_
+    - paragraphs.paragraphs_type.cards_section
+  module:
+    - entity_reference_revisions
+id: paragraph.cards_section.field_card
+field_name: field_card
+entity_type: paragraph
+bundle: cards_section
+label: Card
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card_regular_page_: card_regular_page_
+    target_bundles_drag_drop:
+      4_smaller_blocks:
+        weight: 58
+        enabled: false
+      big_image_section:
+        weight: 59
+        enabled: false
+      block:
+        weight: 60
+        enabled: false
+      blue_background_text_section_:
+        weight: 61
+        enabled: false
+      card_regular_page_:
+        enabled: true
+        weight: 62
+      cards:
+        weight: 63
+        enabled: false
+      cards_section:
+        weight: 64
+        enabled: false
+      career_contact_section:
+        weight: 65
+        enabled: false
+      careers_section:
+        weight: 66
+        enabled: false
+      carousel_image:
+        weight: 67
+        enabled: false
+      company_location:
+        weight: 68
+        enabled: false
+      company_location_hq:
+        weight: 69
+        enabled: false
+      contact_information_:
+        weight: 70
+        enabled: false
+      contact_section:
+        weight: 71
+        enabled: false
+      contact_us:
+        weight: 72
+        enabled: false
+      distributors_wholesalers:
+        weight: 73
+        enabled: false
+      events_section:
+        weight: 74
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 75
+        enabled: false
+      highlights_and_sectors:
+        weight: 76
+        enabled: false
+      hm_post:
+        weight: 77
+        enabled: false
+      homepage_map_block:
+        weight: 78
+        enabled: false
+      icon:
+        weight: 79
+        enabled: false
+      icon_section:
+        weight: 80
+        enabled: false
+      icon_slider:
+        weight: 81
+        enabled: false
+      icons:
+        weight: 82
+        enabled: false
+      icons_regular_page_:
+        weight: 83
+        enabled: false
+      icons_section_regular_page_:
+        weight: 84
+        enabled: false
+      image_:
+        weight: 85
+        enabled: false
+      image_l_text_r_link:
+        weight: 86
+        enabled: false
+      left_column:
+        weight: 87
+        enabled: false
+      left_side_:
+        weight: 88
+        enabled: false
+      left_side_description:
+        weight: 89
+        enabled: false
+      locations_section:
+        weight: 90
+        enabled: false
+      news_section:
+        weight: 91
+        enabled: false
+      o_carousel_of_images:
+        weight: 92
+        enabled: false
+      product_description_:
+        weight: 93
+        enabled: false
+      products_section:
+        weight: 94
+        enabled: false
+      retailers:
+        weight: 95
+        enabled: false
+      right_side:
+        weight: 96
+        enabled: false
+      right_side_contact:
+        weight: 97
+        enabled: false
+      right_side_description:
+        weight: 98
+        enabled: false
+      slider:
+        weight: 99
+        enabled: false
+      slider_section:
+        weight: 100
+        enabled: false
+      solution_parts:
+        weight: 101
+        enabled: false
+      solutions_description_:
+        weight: 102
+        enabled: false
+      subcontinent_column:
+        weight: 103
+        enabled: false
+      subcontinent_column_hq:
+        weight: 104
+        enabled: false
+      technology_2_columns_section:
+        weight: 105
+        enabled: false
+      technology_description:
+        weight: 106
+        enabled: false
+      tes:
+        weight: 107
+        enabled: false
+      text_image_section:
+        weight: 108
+        enabled: false
+      text_l_image_r_hotline_number:
+        weight: 109
+        enabled: false
+      text_l_image_r_section:
+        weight: 110
+        enabled: false
+      text_l_image_r_section_events_:
+        weight: 111
+        enabled: false
+      text_l_image_r_support_:
+        weight: 112
+        enabled: false
+      text_section:
+        weight: 113
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 114
+        enabled: false
+field_type: entity_reference_revisions

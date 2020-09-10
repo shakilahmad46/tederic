@@ -1,0 +1,18 @@
+uuid: 380e5772-70c4-4a04-b083-363289114dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.technology_2_columns_section
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.technology_2_columns_section
+target_entity_type_id: paragraph
+target_bundle: technology_2_columns_section
+default_langcode: site_default
+language_alterable: true

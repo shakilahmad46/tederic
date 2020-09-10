@@ -1,0 +1,19 @@
+uuid: 399a8a62-128c-4596-b9bf-1ddfaf1cf3fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_phone_number_block
+field_name: field_phone_number_block
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

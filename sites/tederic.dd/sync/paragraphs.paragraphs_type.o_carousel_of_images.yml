@@ -1,0 +1,10 @@
+uuid: 1f2a12f7-197f-43bf-a39f-fc1dcfbfe80a
+langcode: en
+status: true
+dependencies: {  }
+id: o_carousel_of_images
+label: 'Carousel  widget'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,32 @@
+uuid: 6dc884f8-87d6-4b7c-8087-bcf02d9bc2f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block.field_subtitle_text
+    - field.field.paragraph.block.field_text_plain
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.default
+targetEntityType: paragraph
+bundle: block
+mode: default
+content:
+  field_subtitle_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_plain:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

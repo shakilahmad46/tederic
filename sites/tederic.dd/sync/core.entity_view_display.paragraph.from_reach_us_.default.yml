@@ -1,0 +1,30 @@
+uuid: cee07351-5f1c-4345-9d5f-0808ef14ee23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.from_reach_us_.field_description
+    - field.field.paragraph.from_reach_us_.field_section_title
+    - paragraphs.paragraphs_type.from_reach_us_
+  module:
+    - text
+id: paragraph.from_reach_us_.default
+targetEntityType: paragraph
+bundle: from_reach_us_
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

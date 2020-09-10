@@ -1,0 +1,64 @@
+uuid: 08814928-769f-41ba-a439-7f6c94c050c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section.field_description
+    - field.field.paragraph.products_section.field_link
+    - field.field.paragraph.products_section.field_select_view
+    - field.field.paragraph.products_section.field_subtitle
+    - field.field.paragraph.products_section.field_title
+    - paragraphs.paragraphs_type.products_section
+  module:
+    - link
+    - text
+    - viewsreference
+id: paragraph.products_section.default
+targetEntityType: paragraph
+bundle: products_section
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_select_view:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 95397fcc-ac2a-414d-b14c-a87b8d808a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.retailers
+  module:
+    - text
+id: paragraph.retailers.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: retailers
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

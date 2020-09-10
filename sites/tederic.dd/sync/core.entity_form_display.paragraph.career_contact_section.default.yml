@@ -1,0 +1,46 @@
+uuid: 0f8a99fc-a47c-4a11-a9bf-ec6e6f72368f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.career_contact_section.field_description
+    - field.field.paragraph.career_contact_section.field_image
+    - field.field.paragraph.career_contact_section.field_link_career
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.career_contact_section
+  module:
+    - image
+    - link
+    - text
+id: paragraph.career_contact_section.default
+targetEntityType: paragraph
+bundle: career_contact_section
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link_career:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

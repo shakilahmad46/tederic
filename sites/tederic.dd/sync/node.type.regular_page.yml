@@ -1,0 +1,17 @@
+uuid: f260ebda-2684-401c-befa-aaeaaec99c2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Regular Page'
+type: regular_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

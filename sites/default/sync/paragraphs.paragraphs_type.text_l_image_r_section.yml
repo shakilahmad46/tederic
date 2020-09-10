@@ -1,0 +1,10 @@
+uuid: 3efd824c-3e20-44f9-a453-a9e407ef94df
+langcode: en
+status: true
+dependencies: {  }
+id: text_l_image_r_section
+label: 'Text L / Image R section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

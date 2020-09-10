@@ -1,0 +1,25 @@
+uuid: 959c5c38-82c8-4c67-875f-2e7d6b47cd6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-link
+  module:
+    - system
+  theme:
+    - tederic
+id: sociallink
+theme: tederic
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:social-link'
+settings:
+  id: 'system_menu_block:social-link'
+  label: 'Social Link'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 3a1b7fbe-6c86-4433-88e5-c5e7e939c018
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_content.field_image
+    - paragraphs.paragraphs_type.carousel_content
+  module:
+    - image
+id: paragraph.carousel_content.default
+targetEntityType: paragraph
+bundle: carousel_content
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

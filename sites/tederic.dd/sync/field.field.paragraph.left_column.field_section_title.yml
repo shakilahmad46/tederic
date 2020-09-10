@@ -1,0 +1,21 @@
+uuid: 015f2894-e73e-4c31-85a7-dcaa7758f0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.left_column
+  module:
+    - text
+id: paragraph.left_column.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: left_column
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

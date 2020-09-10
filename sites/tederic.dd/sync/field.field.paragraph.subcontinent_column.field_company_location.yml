@@ -1,0 +1,79 @@
+uuid: c602bca8-fbeb-409e-b0d6-29072e915c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_company_location
+    - paragraphs.paragraphs_type.company_location
+    - paragraphs.paragraphs_type.subcontinent_column
+  module:
+    - entity_reference_revisions
+id: paragraph.subcontinent_column.field_company_location
+field_name: field_company_location
+entity_type: paragraph
+bundle: subcontinent_column
+label: 'Company Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      company_location: company_location
+    target_bundles_drag_drop:
+      company_location:
+        enabled: true
+        weight: 18
+      contact_section:
+        weight: 19
+        enabled: false
+      distributors_wholesalers:
+        weight: 20
+        enabled: false
+      events_section:
+        weight: 21
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 22
+        enabled: false
+      hm_post:
+        weight: 23
+        enabled: false
+      homepage_map_block:
+        weight: 24
+        enabled: false
+      icon_section:
+        weight: 25
+        enabled: false
+      icon_slider:
+        weight: 26
+        enabled: false
+      image_:
+        weight: 27
+        enabled: false
+      locations_section:
+        weight: 28
+        enabled: false
+      news_section:
+        weight: 29
+        enabled: false
+      products_section:
+        weight: 30
+        enabled: false
+      slider:
+        weight: 31
+        enabled: false
+      slider_section:
+        weight: 32
+        enabled: false
+      subcontinent_column:
+        weight: 33
+        enabled: false
+      tes:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,45 @@
+uuid: 0f559167-271d-4c28-935b-d6f9fee491ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_section.field_image
+    - field.field.paragraph.contact_section.field_text_
+    - field.field.paragraph.contact_section.field_text_content_center
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact_section
+  module:
+    - image
+    - text
+id: paragraph.contact_section.default
+targetEntityType: paragraph
+bundle: contact_section
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text_:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_content_center:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

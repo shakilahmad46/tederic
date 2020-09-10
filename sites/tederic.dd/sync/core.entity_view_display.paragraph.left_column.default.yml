@@ -1,0 +1,30 @@
+uuid: 5b402d8f-1e94-4d2b-b9be-6e4434303fd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.left_column.field_description
+    - field.field.paragraph.left_column.field_section_title
+    - paragraphs.paragraphs_type.left_column
+  module:
+    - text
+id: paragraph.left_column.default
+targetEntityType: paragraph
+bundle: left_column
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

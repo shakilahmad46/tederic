@@ -1,0 +1,42 @@
+uuid: c55af1a6-7333-4156-aa4f-485542d25236
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_section.field_related_solution_item
+    - field.field.paragraph.related_section.field_related_technology_2
+    - paragraphs.paragraphs_type.related_section
+  module:
+    - paragraphs
+id: paragraph.related_section.default
+targetEntityType: paragraph
+bundle: related_section
+mode: default
+content:
+  field_related_solution_item:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_related_technology_2:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

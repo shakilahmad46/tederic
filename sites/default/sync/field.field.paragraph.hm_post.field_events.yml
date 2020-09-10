@@ -1,0 +1,61 @@
+uuid: 3b0411c2-f86b-41ad-af9f-2107ce8bd488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_events
+    - paragraphs.paragraphs_type.events_section
+    - paragraphs.paragraphs_type.hm_post
+  module:
+    - entity_reference_revisions
+id: paragraph.hm_post.field_events
+field_name: field_events
+entity_type: paragraph
+bundle: hm_post
+label: Events
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      events_section: events_section
+    target_bundles_drag_drop:
+      contact_section:
+        weight: 12
+        enabled: false
+      events_section:
+        enabled: true
+        weight: 13
+      hm_post:
+        weight: 14
+        enabled: false
+      homepage_map_block:
+        weight: 15
+        enabled: false
+      icon_section:
+        weight: 16
+        enabled: false
+      icon_slider:
+        weight: 17
+        enabled: false
+      news_section:
+        weight: 18
+        enabled: false
+      product:
+        weight: 19
+        enabled: false
+      products_section:
+        weight: 20
+        enabled: false
+      slider:
+        weight: 21
+        enabled: false
+      slider_section:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

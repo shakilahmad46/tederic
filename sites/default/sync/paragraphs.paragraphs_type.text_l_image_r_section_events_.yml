@@ -1,0 +1,10 @@
+uuid: 31de7727-9273-4852-8da9-51dff91ea190
+langcode: en
+status: true
+dependencies: {  }
+id: text_l_image_r_section_events_
+label: 'Text L Image R section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 4501b9ab-f778-4b84-9165-4bd70e9cc5d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ci
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+id: paragraph.text_l_image_r_hotline_number.field_ci
+field_name: field_ci
+entity_type: paragraph
+bundle: text_l_image_r_hotline_number
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

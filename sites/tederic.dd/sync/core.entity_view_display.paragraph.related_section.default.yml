@@ -1,0 +1,34 @@
+uuid: 6253677a-dc83-4693-bea1-99c99b753bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_section.field_related_solution_item
+    - field.field.paragraph.related_section.field_related_technology_2
+    - paragraphs.paragraphs_type.related_section
+  module:
+    - entity_reference_revisions
+id: paragraph.related_section.default
+targetEntityType: paragraph
+bundle: related_section
+mode: default
+content:
+  field_related_solution_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_related_technology_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

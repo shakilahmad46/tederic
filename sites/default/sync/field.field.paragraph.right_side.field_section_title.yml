@@ -1,0 +1,21 @@
+uuid: fed5a0f1-32b4-4458-8505-268d8c043908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.right_side
+  module:
+    - text
+id: paragraph.right_side.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: right_side
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: 8d0b4cc3-db30-48d1-bc44-b42dfd146d76
+langcode: en
+status: true
+dependencies: {  }
+id: career_contact_section
+label: 'Career Contact Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

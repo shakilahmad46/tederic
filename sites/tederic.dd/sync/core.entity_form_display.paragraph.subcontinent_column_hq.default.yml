@@ -1,0 +1,38 @@
+uuid: 5f303612-fbd2-45b3-803e-56f54417abc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subcontinent_column_hq.field_company_location_hq
+    - field.field.paragraph.subcontinent_column_hq.field_title
+    - paragraphs.paragraphs_type.subcontinent_column_hq
+  module:
+    - paragraphs
+id: paragraph.subcontinent_column_hq.default
+targetEntityType: paragraph
+bundle: subcontinent_column_hq
+mode: default
+content:
+  field_company_location_hq:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

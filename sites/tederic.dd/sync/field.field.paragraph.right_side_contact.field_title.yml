@@ -1,0 +1,19 @@
+uuid: 7d4d9cf0-13ad-473f-b34a-3372a3b898a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.right_side_contact
+id: paragraph.right_side_contact.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: right_side_contact
+label: 'Button Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

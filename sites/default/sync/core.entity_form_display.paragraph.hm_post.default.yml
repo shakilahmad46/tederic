@@ -1,0 +1,42 @@
+uuid: f36c966a-6229-412a-a6ff-bd8aa7f39817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hm_post.field_events
+    - field.field.paragraph.hm_post.field_latest
+    - paragraphs.paragraphs_type.hm_post
+  module:
+    - paragraphs
+id: paragraph.hm_post.default
+targetEntityType: paragraph
+bundle: hm_post
+mode: default
+content:
+  field_events:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_latest:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

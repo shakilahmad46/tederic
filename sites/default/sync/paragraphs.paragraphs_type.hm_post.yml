@@ -1,0 +1,10 @@
+uuid: 008d1a15-7d89-452d-9515-3b36288e2f56
+langcode: en
+status: true
+dependencies: {  }
+id: hm_post
+label: 'HM Post'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+uuid: 821b8922-b7db-4747-87fa-5353b66e603b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Technology
+type: technology
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

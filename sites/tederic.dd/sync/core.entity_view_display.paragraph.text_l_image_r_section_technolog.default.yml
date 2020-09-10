@@ -1,0 +1,49 @@
+uuid: d3860793-e322-4870-941a-ae30bdb59c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_section_technolog.field_description
+    - field.field.paragraph.text_l_image_r_section_technolog.field_image
+    - field.field.paragraph.text_l_image_r_section_technolog.field_section_title
+    - field.field.paragraph.text_l_image_r_section_technolog.field_subtitle_2
+    - paragraphs.paragraphs_type.text_l_image_r_section_technolog
+  module:
+    - image
+    - text
+id: paragraph.text_l_image_r_section_technolog.default
+targetEntityType: paragraph
+bundle: text_l_image_r_section_technolog
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_section_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_subtitle_2:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

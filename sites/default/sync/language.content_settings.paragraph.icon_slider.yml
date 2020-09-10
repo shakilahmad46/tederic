@@ -1,0 +1,18 @@
+uuid: 5f3f5b51-cad1-42e0-ad8f-0344488ad098
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icon_slider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.icon_slider
+target_entity_type_id: paragraph
+target_bundle: icon_slider
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,39 @@
+uuid: 5525a7b5-884e-4cc1-9bcd-dc9fd7284235
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.retailers.field_body
+    - field.field.paragraph.retailers.field_subcontinent_name_column
+    - paragraphs.paragraphs_type.retailers
+  module:
+    - paragraphs
+    - text
+id: paragraph.retailers.default
+targetEntityType: paragraph
+bundle: retailers
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_subcontinent_name_column:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true

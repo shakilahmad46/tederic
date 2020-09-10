@@ -1,0 +1,23 @@
+uuid: 7aa06dca-d557-4b2d-ac71-058c2c8cad7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_career
+    - paragraphs.paragraphs_type.career_contact_section
+  module:
+    - link
+id: paragraph.career_contact_section.field_link_career
+field_name: field_link_career
+entity_type: paragraph
+bundle: career_contact_section
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

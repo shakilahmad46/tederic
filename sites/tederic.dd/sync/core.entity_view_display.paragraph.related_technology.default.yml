@@ -1,0 +1,21 @@
+uuid: 2ea76bcd-13b7-447a-9a8a-5d7427776dd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_technology.field_related_technology
+    - paragraphs.paragraphs_type.related_technology
+id: paragraph.related_technology.default
+targetEntityType: paragraph
+bundle: related_technology
+mode: default
+content:
+  field_related_technology:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

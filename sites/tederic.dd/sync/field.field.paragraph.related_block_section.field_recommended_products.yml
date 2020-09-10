@@ -1,0 +1,21 @@
+uuid: 1a6e662e-8274-4ee6-8e37-a5c4ed0b1e70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_recommended_products
+    - paragraphs.paragraphs_type.related_block_section
+id: paragraph.related_block_section.field_recommended_products
+field_name: field_recommended_products
+entity_type: paragraph
+bundle: related_block_section
+label: 'Recommended products'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

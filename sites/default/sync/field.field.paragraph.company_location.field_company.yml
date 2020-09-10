@@ -1,0 +1,19 @@
+uuid: 2e659c47-f68c-4ce8-ad87-2cd7efccb152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_company
+    - paragraphs.paragraphs_type.company_location
+id: paragraph.company_location.field_company
+field_name: field_company
+entity_type: paragraph
+bundle: company_location
+label: 'Company Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

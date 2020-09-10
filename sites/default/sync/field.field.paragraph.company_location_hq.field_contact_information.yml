@@ -1,0 +1,88 @@
+uuid: bfaefccb-f00b-4475-a66c-40acea9a4d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_information
+    - paragraphs.paragraphs_type.company_location_hq
+    - paragraphs.paragraphs_type.contact_information_
+  module:
+    - entity_reference_revisions
+id: paragraph.company_location_hq.field_contact_information
+field_name: field_contact_information
+entity_type: paragraph
+bundle: company_location_hq
+label: Contact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_information_: contact_information_
+    target_bundles_drag_drop:
+      company_location:
+        weight: 21
+        enabled: false
+      company_location_hq:
+        weight: 22
+        enabled: false
+      contact_information_:
+        enabled: true
+        weight: 23
+      contact_section:
+        weight: 24
+        enabled: false
+      distributors_wholesalers:
+        weight: 25
+        enabled: false
+      events_section:
+        weight: 26
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 27
+        enabled: false
+      hm_post:
+        weight: 28
+        enabled: false
+      homepage_map_block:
+        weight: 29
+        enabled: false
+      icon_section:
+        weight: 30
+        enabled: false
+      icon_slider:
+        weight: 31
+        enabled: false
+      image_:
+        weight: 32
+        enabled: false
+      locations_section:
+        weight: 33
+        enabled: false
+      news_section:
+        weight: 34
+        enabled: false
+      products_section:
+        weight: 35
+        enabled: false
+      retailers:
+        weight: 36
+        enabled: false
+      slider:
+        weight: 37
+        enabled: false
+      slider_section:
+        weight: 38
+        enabled: false
+      subcontinent_column:
+        weight: 39
+        enabled: false
+      tes:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

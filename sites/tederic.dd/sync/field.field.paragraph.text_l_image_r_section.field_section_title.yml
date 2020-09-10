@@ -1,0 +1,21 @@
+uuid: 10c1b75f-c88e-47d8-b3bf-b744ae8d71a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - text
+id: paragraph.text_l_image_r_section.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: text_l_image_r_section
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

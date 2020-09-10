@@ -787,7 +787,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$config_directories['sync'] = 'sites/default/files/config__debts-cRwBfiq6nfX0TYluFqn8sAHyob6g1zeyLYNVvoxFFcS11tA-fxNk-2r57qRVvhRpZDw/sync';
+//$config_directories['sync'] = 'sites/default/files/config__debts-cRwBfiq6nfX0TYluFqn8sAHyob6g1zeyLYNVvoxFFcS11tA-fxNk-2r57qRVvhRpZDw/sync';
+$config_directories['sync'] = 'sites/default/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
 // $settings['cache']['bins']['render'] = 'cache.backend.null';

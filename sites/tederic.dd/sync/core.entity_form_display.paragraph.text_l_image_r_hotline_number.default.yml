@@ -1,0 +1,72 @@
+uuid: 38ccc96a-f4dd-4358-ad80-0796748a1595
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_hotline_number.field_body
+    - field.field.paragraph.text_l_image_r_hotline_number.field_ci
+    - field.field.paragraph.text_l_image_r_hotline_number.field_description
+    - field.field.paragraph.text_l_image_r_hotline_number.field_image
+    - field.field.paragraph.text_l_image_r_hotline_number.field_p_image
+    - field.field.paragraph.text_l_image_r_hotline_number.field_subtitle
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+  module:
+    - image
+    - text
+id: paragraph.text_l_image_r_hotline_number.default
+targetEntityType: paragraph
+bundle: text_l_image_r_hotline_number
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_ci:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_p_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_subtitle:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

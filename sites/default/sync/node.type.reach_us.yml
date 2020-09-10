@@ -1,0 +1,17 @@
+uuid: 03d572e0-6543-4124-87d3-ccaa1d7895b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Reach us'
+type: reach_us
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,33 @@
+uuid: fa167bb3-c0dc-47a8-90bd-7f69d2667a14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_section.field_select_view
+    - field.field.paragraph.events_section.field_title
+    - paragraphs.paragraphs_type.events_section
+  module:
+    - viewsreference
+id: paragraph.events_section.default
+targetEntityType: paragraph
+bundle: events_section
+mode: default
+content:
+  field_select_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,54 @@
+uuid: a9b3a41d-1ecc-4baf-a349-d8e0fe8f4a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_section_technolog.field_description
+    - field.field.paragraph.text_l_image_r_section_technolog.field_image
+    - field.field.paragraph.text_l_image_r_section_technolog.field_section_title
+    - field.field.paragraph.text_l_image_r_section_technolog.field_subtitle_2
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_l_image_r_section_technolog
+  module:
+    - image
+    - text
+id: paragraph.text_l_image_r_section_technolog.default
+targetEntityType: paragraph
+bundle: text_l_image_r_section_technolog
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_section_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_subtitle_2:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,39 @@
+uuid: 6d1594ee-4d71-4708-9adf-03a1fabbc0c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section_re.field_section_title
+    - field.field.paragraph.products_section_re.field_series_sub_category_2
+    - paragraphs.paragraphs_type.products_section_re
+  module:
+    - paragraphs
+    - text
+id: paragraph.products_section_re.default
+targetEntityType: paragraph
+bundle: products_section_re
+mode: default
+content:
+  field_section_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_series_sub_category_2:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,25 @@
+uuid: 555fe687-7752-44d3-bacd-a807ab6f5d13
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:27a43f06-ea7a-448d-b8ac-09bec1a81f9a'
+  module:
+    - block_content
+  theme:
+    - tederic
+id: copyrightsection
+theme: tederic
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:27a43f06-ea7a-448d-b8ac-09bec1a81f9a'
+settings:
+  id: 'block_content:27a43f06-ea7a-448d-b8ac-09bec1a81f9a'
+  label: 'Copyright Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

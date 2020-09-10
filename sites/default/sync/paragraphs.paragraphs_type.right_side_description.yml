@@ -1,0 +1,10 @@
+uuid: df1aaea5-67fd-4d96-aebf-cdf79059397d
+langcode: en
+status: true
+dependencies: {  }
+id: right_side_description
+label: 'Right Side Description'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

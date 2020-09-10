@@ -1,0 +1,21 @@
+uuid: 6b585cec-8073-4faf-9f1e-b15dd0acaf69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.card_regular_page_
+  module:
+    - text
+id: paragraph.card_regular_page_.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: card_regular_page_
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

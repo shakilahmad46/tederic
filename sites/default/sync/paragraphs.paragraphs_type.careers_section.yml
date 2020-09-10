@@ -1,0 +1,10 @@
+uuid: 718897cd-5b2f-4518-a821-8cf097eea9f2
+langcode: en
+status: true
+dependencies: {  }
+id: careers_section
+label: 'Careers section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

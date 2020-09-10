@@ -1,0 +1,24 @@
+uuid: 613e3e00-09d7-40d3-9f3d-691c04a73455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.left_side_.field_image
+    - paragraphs.paragraphs_type.left_side_
+  module:
+    - image
+id: paragraph.left_side_.default
+targetEntityType: paragraph
+bundle: left_side_
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

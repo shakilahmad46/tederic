@@ -1,0 +1,38 @@
+uuid: 293ca977-e926-46bb-8686-87de398f4b5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.technology_2_columns_section.field_description
+    - field.field.paragraph.technology_2_columns_section.field_section_title
+    - field.field.paragraph.technology_2_columns_section.field_text_
+    - paragraphs.paragraphs_type.technology_2_columns_section
+  module:
+    - text
+id: paragraph.technology_2_columns_section.default
+targetEntityType: paragraph
+bundle: technology_2_columns_section
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

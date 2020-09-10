@@ -1,0 +1,10 @@
+uuid: f97b7a0a-6243-4413-838b-cda78012beaa
+langcode: en
+status: true
+dependencies: {  }
+id: cards_section_regular_page_
+label: 'Cards section (Regular Page)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
