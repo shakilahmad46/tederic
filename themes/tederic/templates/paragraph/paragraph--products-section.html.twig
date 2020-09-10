@@ -1,0 +1,15 @@
+<div class="hm-pro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3>{{ content.field_title }}</h3>
+                <h2>{{ content.field_subtitle }}</h2>
+                {{ content.field_description }}
+                <a class="btn-gen" href="{{ content.field_link.0['#url'] }}">{{ content.field_link.0['#title'] }}<span><i class="fa fa-angle-right"></i></span></a>
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12 no-pad">
+                {{ content.field_select_view }}
+            </div>
+        </div>
+    </div>
+</div>

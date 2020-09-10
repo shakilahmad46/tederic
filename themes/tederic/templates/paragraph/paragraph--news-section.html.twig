@@ -1,0 +1,27 @@
+
+<div class="hm-post news-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <h2>{{ content.field_title }}</h2>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">POPULAR</a></li>
+                    <li><a data-toggle="tab" href="#menu1">RECENT</a></li>
+                </ul>
+            </div>
+            <div class="rwo">
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        {{ content.field_select_view }}
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        {{ content.field_popular_view }} 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 text-center"><a class="btn-gen" href="{{ content.field_link.0['#url'] }}">{{ content.field_link.0['#title'] }}<span><i class="fa fa-angle-right"></i></span></a></div>
+    </div>
+</div>

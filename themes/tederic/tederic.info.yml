@@ -1,0 +1,16 @@
+name: 'Tederic'
+core: 8.x
+type: theme
+description: 'A drupal 8 based theme'
+
+regions:
+  site_branding: 'Site Branding' 
+  top_header_menu: 'Top Header Menu'
+  navigation: 'Main Navigation'
+  content: 'Content'
+  footer: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+  hidden: 'Hidden Blocks'
+
+libraries:
+  - tederic/framework

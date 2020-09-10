@@ -1,0 +1,68 @@
+{% if items %}
+    <ul class="nav navbar-nav navbar-right">
+    {% for item in items %}
+      {%
+        set item_classes = item.url.getOption('container_attributes').class | split(" ")
+      %}
+      {%
+        set item_classes = [
+          item.is_expanded and item.below ? 'expanded dropdown',
+          item.in_active_trail ? 'active active-trail',
+          loop.first ? 'first',
+          loop.last ? 'last',
+        ]
+      %}
+      <li{{ item.attributes.addClass(item_classes) }}>
+        {% set link_title = item.title %}
+        {% set link_attributes = item.link_attributes %}
+        {% if menu_level == 0 and item.is_expanded and item.below %}
+          {% set link_title %}{{ link_title }} <span class="caret"></span>{% endset %}
+          {% set link_attributes = link_attributes.addClass('dropdown-toggle').setAttribute('data-toggle', 'dropdown') %}
+        {% endif %}
+        {# Must use link() here so it triggers hook_link_alter(). #}
+        {{ link(link_title, item.url, link_attributes.addClass(item.in_active_trail ? 'active-trail')) }}
+        {% if item.below %}
+          {{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes, dropdown_classes) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    <li class="dropdown language-selector">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+          En <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu pull-right">
+              <li>
+                  <a href="#">
+                  <img src="/tederic/themes/tederic/images/flag-de.png" />
+                  <span>Deutsch</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                  <img src="/tederic/themes/tederic/images/flag-uk.png" />
+                  <span>English</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                  <img src="/tederic/themes/tederic/images/flag-fr.png" />
+                  <span>François</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                  <img src="/tederic/themes/tederic/images/flag-al.png" />
+                  <span>Shqip</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                  <img src="/tederic/themes/tederic/images/flag-es.png" />
+                  <span>Español</span>
+                  </a>
+              </li>
+          </ul>
+      </li>
+      <li class="mob"><a href="#search"><img src="/tederic/themes/tederic/images/search-icon.png" alt="search-icon"></a></li>
+    </ul>
+  {% endif %}

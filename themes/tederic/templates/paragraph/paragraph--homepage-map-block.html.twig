@@ -1,0 +1,15 @@
+<div class="map-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3>{{ content.field_title }}</h3>
+                <h4>{{ content.field_subtitle }}</h4>
+                <p>{{ content.field_description }}</p>
+                <a class="btn-gen" href="{{ content.field_link.0['#url'] }}">{{ content.field_link.0['#title'] }} <span><i class="fa fa-angle-right"></i></span></a>
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                {{ content.field_map }}
+            </div>
+        </div>
+    </div>
+</div>

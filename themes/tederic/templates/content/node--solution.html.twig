@@ -1,0 +1,194 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+<div class="tiltle-bar">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+      <h2>We are <strong>exceptionally flexible and versatile </strong>to adapt to<br> varying demands of auto parts makers.</h2>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="automo au-sec1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <h2><span><img src="images/auto-icon1.png" alt="auto-icon1"></span>Automotive Parts</h2>
+        <p>Focuses on car lights, multi-components, foaming and so on lightweighted moulding technics, rivaling industry leaders from europe and US on large two-platen, multi-components, horizontal rotary platen and opposite injection solutions.</p>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <img src="images/automotive-img1.png" alt="automotive-img1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="automo au-sec2">
+  <div class="container">
+    <div class="col-md-12"><h1>Find the best solution for you</h1></div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box1.png" alt="auto-box1">
+        <h3>Lens</h3>
+        <p>Tederic lens-dedicated precision molding technology enables the production of the shorter time cycle, higher repeatability and better optical attributes for LED optical lens products.</p>
+        <a class="btn-gen" href="lens.html">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box2.png" alt="auto-box2">
+        <h3>Car body</h3>
+        <p>we bring you one-off high-efficiency solution for perfect car body parts injection molding, armed with leading technologies like micro-foaming, press-compression molding to further achieve auto parts lightweight demands.</p>
+        <a class="btn-gen" href="#">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box3.png" alt="auto-box3">
+        <h3>Light guide plate</h3>
+        <p>Tederic possesses professional and customizable light guide application solutions, to achieve high-efficiency production of the of colorful auxiliary light like.</p>
+        <a class="btn-gen" href="#">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box4.png" alt="auto-box4">
+        <h3>Interiors</h3>
+        <p>For both functionalities and fashion appeals of automotive interiors, Tederic is handy over whether single or multi-component sealed auto parts, or high-gloss products with rigor demand on the surface.</p>
+        <a class="btn-gen" href="#">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box5.png" alt="auto-box5">
+        <h3>Car lamps</h3>
+        <p>Tederic owns precision optical technology solutions, combined with our professional two-platen multi-color/component molding opposite horizontal turntable multi-component injection molding, full automation system and PC/PMMA.</p>
+        <a class="btn-gen" href="#">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="images/auto-box6.png" alt="auto-box6">
+        <h3>Bumper</h3>
+        <p>In addition to the decorative purpose to the overall appearance, the bumper is more significant of absorbing and mitigating the external impact for safety. for long and narrow-shaped bumper products. </p>
+        <a class="btn-gen" href="#">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="automo au-sec3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center"><h3>Explore our other solutions </h3></div>
+      <div class="col-md-12 text-center">
+        <ul>
+          <li><img src="images/aut-icon1.png" alt="aut-icon1">
+           <p>Packaging <br>& Medical</p>
+          </li>
+            <li><img src="images/aut-icon2.png" alt="aut-icon2">
+           <p>Teletronics</p>
+          </li>
+           <li><img src="images/aut-icon3.png" alt="aut-icon3">
+           <p>Construction</p>
+          </li>
+           <li><img src="images/aut-icon4.png" alt="aut-icon4">
+           <p>Containers <br>& Logistics</p>
+          </li>
+           <li><img src="images/aut-icon5.png" alt="aut-icon5">
+           <p>Household <br>Appliances</p>
+          </li>
+           <li><img src="images/aut-icon6.png" alt="aut-icon6">
+           <p>Interior <br>Decoration</p>
+          </li>
+           <li><img src="images/aut-icon7.png" alt="aut-icon7">
+           <p>For <br>Kids</p>
+          </li>
+           <li><img src="images/aut-icon8.png" alt="aut-icon8">
+           <p>Lifestyle</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

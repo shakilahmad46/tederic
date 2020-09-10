@@ -1,0 +1,26 @@
+{% for row in rows %}
+    {% if loop.index == 1 %}
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="post-box small">
+                {{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ field_main_image }}'] }}
+                <h3>{{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ title }}'] }}</h3>
+                <ul>
+                    <li><i class="fa fa-calendar"></i>{{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ created }}'] }}</li>
+                    <li><i class="fa fa-eye"></i> {{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ totalcount_1 }}'] }} Visitor</li>
+                </ul>
+            </div>
+        </div>
+    {% else %}
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="post-box big">
+                {{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ field_main_image }}'] }}
+                <h3>{{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ title }}'] }}</h3>
+                {{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ body }}'] }}
+                <ul>
+                    <li><i class="fa fa-calendar"></i>{{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ created }}'] }}</li>
+                    <li><i class="fa fa-eye"></i> {{ row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ totalcount_1 }}'] }} Visitor</li>
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

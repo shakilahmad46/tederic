@@ -1,0 +1,139 @@
+
+<div class="main-header">
+    <div class="menu-area">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    {{ page.site_branding }}
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="top-bar text-right">
+                        {% if page.top_header_menu %}
+                            {{ page.top_header_menu }}
+                        {% endif %}
+                    </div>
+                    {% if page.navigation %}
+                        {{ page.navigation }}
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+{# Content #}
+{% block content %}
+  <a id="main-content"></a>
+  {{ page.content }}
+{% endblock %}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            {% if page.footer %}
+                {{ page.footer }}
+            {% endif %}
+        </div>
+        <div class="row">
+            {% if page.footer_bottom %}
+                {{ page.footer_bottom }}
+            {% endif %}
+        </div>
+    </div>
+</footer>
+<div class="model-hm">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary posit" data-toggle="modal" data-target="#exampleModal">
+    Contact
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label> First Name*
+                            <input type="text" name="first name">
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label> Last Name*
+                            <input type="text" name="last name">
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label> Email*
+                            <input type="email" name="email">
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label>
+                                Country
+                                <select>
+                                    <option></option>
+                                    <option>lorem ipsum</option>
+                                    <option>lorem ipsum</option>
+                                    <option>lorem ipsum</option>
+                                    <option>lorem ipsum</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label> Company
+                            <input type="text" name="company">
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label>
+                                Area of interest*
+                                <select>
+                                    <option>Product-Injection Molding Machine</option>
+                                    <option>Product-Injection Molding Machine</option>
+                                    <option>Product-Injection Molding Machine</option>
+                                    <option>Product-Injection Molding Machine</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label> Description
+                            <textarea placeholder="Please share some further details..."></textarea>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="no-full"> 
+                            <input type="checkbox" name="">
+                            I accept the processing of my personal data provide here.
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn-gen">Submit Request <span><i class="fa fa-angle-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form action="/tederic/search/node">
+        <input type="search" value="" name="keys" placeholder="Type Keyword's Here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+

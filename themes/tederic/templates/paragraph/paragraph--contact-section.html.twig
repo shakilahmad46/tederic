@@ -1,0 +1,31 @@
+<div class="signup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <h2>Stay up to date <br>on the latest</h2>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <h3>Sign up to the newsletter</h3>
+                <form>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <button class="btn-gen">Get Started<span><i class="fa fa-angle-right"></i></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="before-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                {{ content.field_image }}
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                {{ content.field_text_content_center }}
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                {{ content.field_text_|raw }} 
+            </div>
+        </div>
+    </div>
+</div>

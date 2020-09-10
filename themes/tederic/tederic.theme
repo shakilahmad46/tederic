@@ -1,0 +1,44 @@
+<?php
+
+use \Drupal\file\Entity\File;
+
+
+function tederic_preprocess_menu__social_link(&$variables) {
+  foreach ($variables['items'] as $menu_id => $menu) {
+    $title = $variables['items'][$menu_id]['title'];
+    $variables['items'][$menu_id]['title'] = \Drupal\Core\Render\Markup::create('<i class="' . $title . '"></i>');
+  }
+}
+
+function tederic_preprocess_field(&$vars) {
+  if ( $vars['field_type'] == 'entity_reference_revisions' && $vars['element']['#items']->getItemDefinition()->getSetting('target_type') == 'paragraph'
+    ) {
+        foreach ($vars['items'] as $idx => $item) 
+        {
+          $vars['items'][$idx]['content']['#paragraph']->index = $idx+1;
+        }
+    }
+}
+
+function tederic_preprocess_paragraph__icon_section(&$variables) {
+
+  $paragraph = $variables['paragraph'];
+  $reference_steps = $paragraph->get('field_icon_slider');
+  
+  $referencedEntities = $reference_steps->referencedEntities();
+  
+  $no_of_icons = 0;
+  foreach ($referencedEntities as $key => $value) {
+    $no_of_icons++;
+  }
+  
+  $variables['no_of_icons'] = $no_of_icons;
+}
+
+
+function tederic_preprocess_paragraph(&$variables){
+    $paragraph = $variables['paragraph'];
+    
+    ($paragraph);
+    
+} 

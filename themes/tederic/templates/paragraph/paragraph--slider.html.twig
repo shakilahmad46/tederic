@@ -1,0 +1,12 @@
+
+<div class="item {% if paragraph.index == 1 %} active {% endif %}">
+    {{ content.field_background_image }}
+    <div class="container">
+        <div class="carousel-caption">
+            <h3>{{ content.field_subtitle }}</h3>
+            <a class="btn-gen" href="{{ content.field_link.0['#url'] }}">{{ content.field_link.0['#title'] }}<span><i class="fa fa-angle-right"></i></span></a>
+        </div>
+    </div>
+</div>
+            
+       

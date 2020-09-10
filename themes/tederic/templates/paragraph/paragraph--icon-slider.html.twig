@@ -1,0 +1,21 @@
+
+
+
+
+<div data-index="{{ paragraph.index }}" class="item {%if paragraph.index == 1 %} active {% endif %}">
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        {{ content.field_icon_image_1 }}
+        <h3>{{ content.field_icon_title_1 }}</h3>
+        <p>{{ content.field_icon_subtitle_1 }}</p>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        {{ content.field_icon_image_2 }}
+        <h3>{{ content.field_icon_title_2 }}</h3>
+        <p>{{ content.field_icon_subtitle_2 }}</p>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        {{ content.field_icon_image_3 }}
+        <h3>{{ content.field_icon_title_3 }}</h3>
+        <p>{{ content.field_icon_subtitle_3 |striptags('<p>') }}</p>
+    </div>
+</div>
