@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.o_carousel_of_images.field_carousel_content
+    - field.field.paragraph.o_carousel_of_images.field_carousel_image
     - paragraphs.paragraphs_type.o_carousel_of_images
   module:
     - paragraphs
@@ -12,9 +12,9 @@ targetEntityType: paragraph
 bundle: o_carousel_of_images
 mode: default
 content:
-  field_carousel_content:
+  field_carousel_image:
     type: entity_reference_paragraphs
-    weight: 11
+    weight: 0
     settings:
       title: Paragraph
       title_plural: Paragraphs

@@ -1,1 +1,0 @@
-window.drupalTranslations = {"strings":{"":{"Link":"\u94fe\u63a5","Image":"\u56fe\u50cf","Unlink":"\u53d6\u6d88\u94fe\u63a5","Edit Link":"\u7f16\u8f91\u94fe\u63a5"}},"pluralFormula":{"1":0,"default":1}};

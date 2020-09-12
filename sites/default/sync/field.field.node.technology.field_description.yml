@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.left_side_description
     - paragraphs.paragraphs_type.related_section_technology_
     - paragraphs.paragraphs_type.technology_2_columns_section
+    - paragraphs.paragraphs_type.text_l_image_r_section
     - paragraphs.paragraphs_type.text_l_image_r_section_technolog
   module:
     - entity_reference_revisions
@@ -29,6 +30,7 @@ settings:
       left_side_description: left_side_description
       text_l_image_r_section_technolog: text_l_image_r_section_technolog
       related_section_technology_: related_section_technology_
+      text_l_image_r_section: text_l_image_r_section
       technology_2_columns_section: technology_2_columns_section
     target_bundles_drag_drop:
       4_smaller_blocks:
@@ -233,8 +235,8 @@ settings:
         weight: 137
         enabled: false
       text_l_image_r_section:
+        enabled: true
         weight: 86
-        enabled: false
       text_l_image_r_section_events_:
         weight: 139
         enabled: false

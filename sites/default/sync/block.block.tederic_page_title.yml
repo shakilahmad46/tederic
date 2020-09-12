@@ -25,12 +25,10 @@ visibility:
     bundles:
       article: article
       events: events
-      news: news
       page: page
       product: product
       slider: slider
       support: support
-      technology: technology
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

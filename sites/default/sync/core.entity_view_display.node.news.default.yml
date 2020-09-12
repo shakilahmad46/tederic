@@ -32,7 +32,7 @@ content:
     region: content
   field_date:
     weight: 106
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -41,7 +41,7 @@ content:
     region: content
   field_display_as_big_card:
     weight: 104
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -51,7 +51,7 @@ content:
     region: content
   field_main_image:
     weight: 102
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -60,7 +60,7 @@ content:
     region: content
   field_popular:
     weight: 103
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -71,7 +71,7 @@ content:
   field_sections_news:
     type: entity_reference_revisions_entity_view
     weight: 108
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -79,7 +79,7 @@ content:
     region: content
   field_spec:
     weight: 105
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -87,15 +87,15 @@ content:
     region: content
   field_summary:
     weight: 107
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

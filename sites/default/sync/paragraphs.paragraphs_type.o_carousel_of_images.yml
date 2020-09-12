@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: o_carousel_of_images
-label: 'Carousel  widget'
+label: 'Carousel of images'
 icon_uuid: null
 icon_default: null
 description: ''
