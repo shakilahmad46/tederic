@@ -29,7 +29,6 @@ visibility:
       page: page
       product: product
       slider: slider
-      support: support
       technology: technology
     negate: false
     context_mapping:

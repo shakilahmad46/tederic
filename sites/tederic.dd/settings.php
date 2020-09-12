@@ -789,7 +789,7 @@ $databases['default']['default'] = array (
 );
 //$config_directories['sync'] = 'sites/default/files/config__debts-cRwBfiq6nfX0TYluFqn8sAHyob6g1zeyLYNVvoxFFcS11tA-fxNk-2r57qRVvhRpZDw/sync';
 $config_directories['sync'] = 'sites/default/sync';
-$config['system.logging']['error_level'] = 'verbose';
+//$config['system.logging']['error_level'] = 'verbose';
 
 // $settings['cache']['bins']['render'] = 'cache.backend.null';
 // $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';

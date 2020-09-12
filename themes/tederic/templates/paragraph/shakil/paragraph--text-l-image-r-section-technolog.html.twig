@@ -1,0 +1,18 @@
+{% set img = file_url(paragraph.field_image.entity.fileuri) %}
+
+       <div class="big-inj-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-12">
+                        {{ content.field_section_title|raw }}
+                        {{ content.field_subtitle_2|raw }}
+                    </div>
+                        {{ content.field_description|raw }}                    
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="{{ img }}" alt="inj">
+                </div>
+            </div>
+        </div>
+    </div>

@@ -39,6 +39,6 @@ function tederic_preprocess_paragraph__icon_section(&$variables) {
 function tederic_preprocess_paragraph(&$variables){
     $paragraph = $variables['paragraph'];
     
-    ($paragraph);
+//    ksm($paragraph);
     
 } 
