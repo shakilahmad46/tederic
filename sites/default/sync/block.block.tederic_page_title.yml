@@ -25,11 +25,14 @@ visibility:
     bundles:
       article: article
       events: events
-      news: news
       page: page
       product: product
       slider: slider
+<<<<<<< HEAD
       technology: technology
+=======
+      support: support
+>>>>>>> 90f4aefb208a713ff768cc9e8d19b3e4aa4494bc
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

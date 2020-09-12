@@ -1,0 +1,218 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+<div class="automo lens-sec1 br-inj">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <h2>Big Injection Volume</h2>
+       <p> Super large injection size technology developed by Tederic, combine the dual-stage extrusion plasticizing, injection mechanism and four-cylinder synchronized injection technology together. </p>
+
+<p>It is with advantages of super-size injection size, balanced plasticizing, precise and stable injection, high efficiency and energy saving, etc. It's mainly applied to production of filter press plate, super large pipe fittings and large scale thick wall plastic products.</p>
+<a class="broucher" href="#">DOWNLOAD BROCHURE<span><i class="fa fa-download"></i></span></a>
+       
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="slider-area-main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="item">
+        <img src="images/big-inj-big.png" alt="big-inj-big" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/big-inj-big.png" alt="big-inj-big" style="width:100%;">
+      </div>
+    
+      <div class="item active">
+        <img src="images/big-inj-big.png" alt="big-inj-big" style="width:100%;">
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <img src="images/slarrow-left.png">
+    </a>-->
+   <div class="lens-arow">
+      <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="">1/4</li>
+    <li data-target="#myCarousel" data-slide-to="1">2/4</li>
+    <li data-target="#myCarousel" data-slide-to="2" class="active">3/4</li>
+  </ol>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <img src="images/slarrow-right.png">
+    </a>
+   </div>
+  </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="big-inj">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> <h2>Highlights</h2></div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+       
+        <ul class="detial-list">
+          <li><p>Space efficiency: <strong>compact design</strong> and shaping,</p></li>
+          <li><p>Extra large volume injection: dual-stage extrusion plasticizing and injection mechanism, to achieve <strong>super large volume</strong> injection molding;</p></li>
+          <li><p>Stable and precision injection: <strong>synchronized four cylinder injection</strong> with large injection pressure</p></li>
+          <li><p>Flexible combination with either <strong>horizontal or vertical </strong>clamping mechanism, to achieve extrusion-molding or injection molding;</p></li>
+
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+       <ul class="detial-list">
+          <li><p><strong>High quality and speed plasticizing:</strong> Screw L/D ratio enlarged to 33:1 or 35:1, makes the plasticizing more fast, balanced and effective, while air cooling temperature control device is furthermore engaged coupled with special airing program, to avoid overheating and ensure stable temperature and quality in plasticizing;</p></li>
+          <li><p>Patented innovation of automated clearing and color changing mechanism, achieve clearing of residual in barrel and plunger end prior to injection;</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="big-inj-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="col-md-12">
+      <h3>Technical Advantages</h3>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+        <ul class="detial-list">
+          <li><p>Mould open position</p></li>
+          <li><p>Repeat accuracy ±0.3mm;</p></li>
+          <li><p>Max. mould o/c speed 700mm/s;</p></li>
+          <li><p>Tie-bar load eccentric ≤4%.</p></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum ex non mauris accumsan egestas. Nunc efficitur quam sit amet arcu accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum ex non mauris accumsan egestas. Nunc efficitur quam sit amet arcu accumsan.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum ex non mauris accumsan egestas. Nunc efficitur quam sit amet arcu accumsan.</p>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <img src="images/inj.png" alt="inj">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="automo au-sec2 neotc2">
+  <div class="container">
+    <div class="row">
+
+<div class="col-md-12"><h1>Related technologies</h1></div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="lensboxes">
+        <img src="images/lens-img4.png" alt="lens-img4">
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="lensboxes">
+        <img src="images/lens-img5.png" alt="lens-img5">
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+       
+      </div>
+
+      <div class="col-md-12"><h1 class="extr">Related Application & solution</h1></div>
+      <div class="neot-lnks">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="lensboxes">
+        <img src="images/net-auto-img.png" alt="net-auto-img">
+        <a href="#">Enviornmental</a>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="lensboxes">
+        <img src="images/net-house-img.png" alt="net-house-img">
+        <a href="#">Household Appliances</a>
+      </div>
+      </div>
+
+       <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="lensboxes">
+        <img src="images/net-enve-img.png" alt="net-enve-img">
+        <a href="#">Automative Parts</a>
+      </div>
+      </div> 
+</div>
+    </div>
+  </div>
+</div>
