@@ -1,0 +1,82 @@
+uuid: c03f0e06-b0fc-4489-8b48-a8bcba89cac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_distributors_wholesalers
+    - paragraphs.paragraphs_type.distributors_wholesalers
+    - paragraphs.paragraphs_type.locations_section
+  module:
+    - entity_reference_revisions
+id: paragraph.locations_section.field_distributors_wholesalers
+field_name: field_distributors_wholesalers
+entity_type: paragraph
+bundle: locations_section
+label: 'Distributors / Wholesalers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      distributors_wholesalers: distributors_wholesalers
+    target_bundles_drag_drop:
+      company_location:
+        weight: 19
+        enabled: false
+      contact_information_:
+        weight: 20
+        enabled: false
+      contact_section:
+        weight: 21
+        enabled: false
+      distributors_wholesalers:
+        enabled: true
+        weight: 22
+      events_section:
+        weight: 23
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 24
+        enabled: false
+      hm_post:
+        weight: 25
+        enabled: false
+      homepage_map_block:
+        weight: 26
+        enabled: false
+      icon_section:
+        weight: 27
+        enabled: false
+      icon_slider:
+        weight: 28
+        enabled: false
+      image_:
+        weight: 29
+        enabled: false
+      locations_section:
+        weight: 30
+        enabled: false
+      news_section:
+        weight: 31
+        enabled: false
+      products_section:
+        weight: 32
+        enabled: false
+      slider:
+        weight: 33
+        enabled: false
+      slider_section:
+        weight: 34
+        enabled: false
+      subcontinent_column:
+        weight: 35
+        enabled: false
+      tes:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

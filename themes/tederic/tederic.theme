@@ -38,7 +38,6 @@ function tederic_preprocess_paragraph__icon_section(&$variables) {
 
 function tederic_preprocess_paragraph(&$variables){
     $paragraph = $variables['paragraph'];
-
     $type = $paragraph->getType();
     if ($type == "o_carousel_of_images"){
     $imageSlides = $paragraph->field_carousel_image->referencedEntities();
@@ -49,5 +48,6 @@ function tederic_preprocess_paragraph(&$variables){
         //$image = \Drupal\image\Entity\ImageStyle::load('244_by_244')->buildUrl($image_url);
       }
     }
-    }    
+    }
+    
 } 

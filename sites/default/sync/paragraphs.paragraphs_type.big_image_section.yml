@@ -1,0 +1,10 @@
+uuid: a879e51e-9544-4ce1-bfb5-8280b2470b56
+langcode: en
+status: true
+dependencies: {  }
+id: big_image_section
+label: 'Big Image Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

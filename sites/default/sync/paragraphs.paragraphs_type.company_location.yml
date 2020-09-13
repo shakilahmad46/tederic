@@ -1,0 +1,10 @@
+uuid: dea2709b-cc6f-4555-902d-f2d625167b14
+langcode: en
+status: true
+dependencies: {  }
+id: company_location
+label: 'Company Location'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

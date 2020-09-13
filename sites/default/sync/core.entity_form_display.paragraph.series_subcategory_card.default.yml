@@ -1,0 +1,24 @@
+uuid: a7fbbbaa-c845-4249-b636-63d338af3064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.series_subcategory_card.field_series_sub_category
+    - paragraphs.paragraphs_type.series_subcategory_card
+id: paragraph.series_subcategory_card.default
+targetEntityType: paragraph
+bundle: series_subcategory_card
+mode: default
+content:
+  field_series_sub_category:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

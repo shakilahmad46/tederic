@@ -1,0 +1,22 @@
+uuid: edfcb554-a7de-47bc-9aa9-d40263f140f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.technology
+  module:
+    - text
+id: node.technology.body
+field_name: body
+entity_type: node
+bundle: technology
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

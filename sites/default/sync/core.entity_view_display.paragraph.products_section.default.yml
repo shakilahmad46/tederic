@@ -1,0 +1,64 @@
+uuid: 4a27facf-6795-44ff-bc0e-2c5f643d451f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section.field_description
+    - field.field.paragraph.products_section.field_link
+    - field.field.paragraph.products_section.field_select_view
+    - field.field.paragraph.products_section.field_subtitle
+    - field.field.paragraph.products_section.field_title
+    - paragraphs.paragraphs_type.products_section
+  module:
+    - link
+    - text
+    - viewsreference
+id: paragraph.products_section.default
+targetEntityType: paragraph
+bundle: products_section
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_select_view:
+    weight: 4
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,75 @@
+uuid: d0112a63-02fb-4eac-aa1c-f67869e73d71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.pages
+    - paragraphs.paragraphs_type.contact_section
+    - paragraphs.paragraphs_type.events_section
+    - paragraphs.paragraphs_type.hm_post
+    - paragraphs.paragraphs_type.homepage_map_block
+    - paragraphs.paragraphs_type.icon_section
+    - paragraphs.paragraphs_type.news_section
+    - paragraphs.paragraphs_type.products_section
+    - paragraphs.paragraphs_type.slider_section
+  module:
+    - entity_reference_revisions
+id: node.pages.field_sections
+field_name: field_sections
+entity_type: node
+bundle: pages
+label: Sections
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_section: contact_section
+      events_section: events_section
+      homepage_map_block: homepage_map_block
+      icon_section: icon_section
+      hm_post: hm_post
+      news_section: news_section
+      products_section: products_section
+      slider_section: slider_section
+    target_bundles_drag_drop:
+      contact_section:
+        enabled: true
+        weight: 9
+      events_section:
+        enabled: true
+        weight: 10
+      hm_post:
+        enabled: true
+        weight: 14
+      homepage_map_block:
+        enabled: true
+        weight: 11
+      icon_section:
+        enabled: true
+        weight: 12
+      icon_slider:
+        weight: 13
+        enabled: false
+      news_section:
+        enabled: true
+        weight: 14
+      product:
+        weight: 19
+        enabled: false
+      products_section:
+        enabled: true
+        weight: 15
+      slider:
+        weight: 17
+        enabled: false
+      slider_section:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

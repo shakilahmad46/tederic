@@ -1,0 +1,182 @@
+uuid: 0948335d-c430-4730-9e3d-94b6318bc787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections_support
+    - node.type.support
+    - paragraphs.paragraphs_type.image_l_text_r_link
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+    - paragraphs.paragraphs_type.text_l_image_r_support_
+  module:
+    - entity_reference_revisions
+id: node.support.field_sections_support
+field_name: field_sections_support
+entity_type: node
+bundle: support
+label: Sections
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_l_text_r_link: image_l_text_r_link
+      text_l_image_r_hotline_number: text_l_image_r_hotline_number
+      text_l_image_r_support_: text_l_image_r_support_
+    target_bundles_drag_drop:
+      4_smaller_blocks:
+        weight: 49
+        enabled: false
+      big_image_section:
+        weight: 50
+        enabled: false
+      block:
+        weight: 51
+        enabled: false
+      cards:
+        weight: 52
+        enabled: false
+      career_contact_section:
+        weight: 53
+        enabled: false
+      careers_section:
+        weight: 54
+        enabled: false
+      carousel_image:
+        weight: 55
+        enabled: false
+      company_location:
+        weight: 56
+        enabled: false
+      company_location_hq:
+        weight: 57
+        enabled: false
+      contact_information_:
+        weight: 58
+        enabled: false
+      contact_section:
+        weight: 59
+        enabled: false
+      contact_us:
+        weight: 60
+        enabled: false
+      distributors_wholesalers:
+        weight: 61
+        enabled: false
+      events_section:
+        weight: 62
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 63
+        enabled: false
+      highlights_and_sectors:
+        weight: 64
+        enabled: false
+      hm_post:
+        weight: 65
+        enabled: false
+      homepage_map_block:
+        weight: 66
+        enabled: false
+      icon:
+        weight: 67
+        enabled: false
+      icon_section:
+        weight: 68
+        enabled: false
+      icon_slider:
+        weight: 69
+        enabled: false
+      icons:
+        weight: 70
+        enabled: false
+      image_:
+        weight: 71
+        enabled: false
+      image_l_text_r_link:
+        enabled: true
+        weight: 73
+      left_column:
+        weight: 72
+        enabled: false
+      left_side_:
+        weight: 73
+        enabled: false
+      left_side_description:
+        weight: 74
+        enabled: false
+      locations_section:
+        weight: 75
+        enabled: false
+      news_section:
+        weight: 76
+        enabled: false
+      o_carousel_of_images:
+        weight: 77
+        enabled: false
+      product_description_:
+        weight: 78
+        enabled: false
+      products_section:
+        weight: 79
+        enabled: false
+      retailers:
+        weight: 80
+        enabled: false
+      right_side:
+        weight: 81
+        enabled: false
+      right_side_contact:
+        weight: 82
+        enabled: false
+      right_side_description:
+        weight: 83
+        enabled: false
+      slider:
+        weight: 84
+        enabled: false
+      slider_section:
+        weight: 85
+        enabled: false
+      solution_parts:
+        weight: 86
+        enabled: false
+      solutions_description_:
+        weight: 87
+        enabled: false
+      subcontinent_column:
+        weight: 88
+        enabled: false
+      subcontinent_column_hq:
+        weight: 89
+        enabled: false
+      technology_2_columns_section:
+        weight: 90
+        enabled: false
+      technology_description:
+        weight: 91
+        enabled: false
+      tes:
+        weight: 92
+        enabled: false
+      text_l_image_r_hotline_number:
+        enabled: true
+        weight: 93
+      text_l_image_r_section:
+        weight: 94
+        enabled: false
+      text_l_image_r_section_events_:
+        weight: 95
+        enabled: false
+      text_l_image_r_support_:
+        enabled: true
+        weight: 99
+      text_section:
+        weight: 96
+        enabled: false
+field_type: entity_reference_revisions

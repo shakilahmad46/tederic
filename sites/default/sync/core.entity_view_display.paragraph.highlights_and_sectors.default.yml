@@ -1,0 +1,24 @@
+uuid: 423f02ad-8593-484b-b83b-ac7ca0ecfdd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlights_and_sectors.field_left_column
+    - paragraphs.paragraphs_type.highlights_and_sectors
+  module:
+    - entity_reference_revisions
+id: paragraph.highlights_and_sectors.default
+targetEntityType: paragraph
+bundle: highlights_and_sectors
+mode: default
+content:
+  field_left_column:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

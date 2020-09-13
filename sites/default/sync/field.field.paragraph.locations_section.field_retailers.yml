@@ -1,0 +1,85 @@
+uuid: 07c674c9-7ef2-4f05-8bab-77443e97f5cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_retailers
+    - paragraphs.paragraphs_type.locations_section
+    - paragraphs.paragraphs_type.retailers
+  module:
+    - entity_reference_revisions
+id: paragraph.locations_section.field_retailers
+field_name: field_retailers
+entity_type: paragraph
+bundle: locations_section
+label: Retailers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      retailers: retailers
+    target_bundles_drag_drop:
+      company_location:
+        weight: 20
+        enabled: false
+      contact_information_:
+        weight: 21
+        enabled: false
+      contact_section:
+        weight: 22
+        enabled: false
+      distributors_wholesalers:
+        weight: 23
+        enabled: false
+      events_section:
+        weight: 24
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 25
+        enabled: false
+      hm_post:
+        weight: 26
+        enabled: false
+      homepage_map_block:
+        weight: 27
+        enabled: false
+      icon_section:
+        weight: 28
+        enabled: false
+      icon_slider:
+        weight: 29
+        enabled: false
+      image_:
+        weight: 30
+        enabled: false
+      locations_section:
+        weight: 31
+        enabled: false
+      news_section:
+        weight: 32
+        enabled: false
+      products_section:
+        weight: 33
+        enabled: false
+      retailers:
+        enabled: true
+        weight: 34
+      slider:
+        weight: 35
+        enabled: false
+      slider_section:
+        weight: 36
+        enabled: false
+      subcontinent_column:
+        weight: 37
+        enabled: false
+      tes:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

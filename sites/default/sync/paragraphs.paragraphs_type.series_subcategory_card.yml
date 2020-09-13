@@ -1,0 +1,10 @@
+uuid: 032f214f-a460-4af4-8c16-94d311c8598f
+langcode: en
+status: true
+dependencies: {  }
+id: series_subcategory_card
+label: 'Series Subcategory Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

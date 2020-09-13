@@ -1,0 +1,39 @@
+uuid: 4123b85a-fd73-4c09-9be7-b333d96c73ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.distributors_wholesalers.field_body
+    - field.field.paragraph.distributors_wholesalers.field_subcontinent_name_column
+    - paragraphs.paragraphs_type.distributors_wholesalers
+  module:
+    - paragraphs
+    - text
+id: paragraph.distributors_wholesalers.default
+targetEntityType: paragraph
+bundle: distributors_wholesalers
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_subcontinent_name_column:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true

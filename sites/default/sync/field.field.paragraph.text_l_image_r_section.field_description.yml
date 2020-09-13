@@ -1,0 +1,21 @@
+uuid: 249e64ca-a89b-4ebf-ade2-44f0c7477dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - text
+id: paragraph.text_l_image_r_section.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: text_l_image_r_section
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 641da88b-07c7-4cde-9e6e-aabb0ddcffa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_series_category_name
+    - taxonomy.vocabulary.series_category
+id: taxonomy_term.series_category.field_series_category_name
+field_name: field_series_category_name
+entity_type: taxonomy_term
+bundle: series_category
+label: 'SERIES category name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

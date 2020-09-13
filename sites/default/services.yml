@@ -1,5 +1,4 @@
 parameters:
-<<<<<<< HEAD
   session.storage.options:
     # Default ini options for sessions.
     #
@@ -65,7 +64,7 @@ parameters:
     #
     # Not recommended in production environments
     # @default null
-    auto_reload: true
+    auto_reload: null
     # Twig cache:
     #
     # By default, Twig templates will be compiled and stored in the filesystem
@@ -76,7 +75,7 @@ parameters:
     #
     # Not recommended in production environments
     # @default true
-    cache: fal
+    cache: true
   renderer.config:
     # Renderer required cache contexts:
     #
@@ -173,13 +172,3 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header.
     supportsCredentials: false
-=======
-    session.storage.options: { gc_probability: 1, gc_divisor: 100, gc_maxlifetime: 200000, cookie_lifetime: 2000000 }
-    twig.config: { debug: true, auto_reload: true, cache: false }
-    renderer.config: { required_cache_contexts: ['languages:language_interface', theme, user.permissions], auto_placeholder_conditions: { max-age: 0, contexts: [session, user], tags: {  } } }
-    http.response.debug_cacheability_headers: true
-    factory.keyvalue: {  }
-    factory.keyvalue.expirable: {  }
-    filter_protocols: [http, https, ftp, news, nntp, tel, telnet, mailto, irc, ssh, sftp, webcal, rtsp]
-    cors.config: { enabled: false, allowedHeaders: {  }, allowedMethods: {  }, allowedOrigins: ['*'], exposedHeaders: false, maxAge: false, supportsCredentials: false }
->>>>>>> 90f4aefb208a713ff768cc9e8d19b3e4aa4494bc

@@ -1,0 +1,22 @@
+uuid: bcef9379-e903-41be-bde5-4359cbf0f1de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.reach_us
+  module:
+    - text
+id: node.reach_us.body
+field_name: body
+entity_type: node
+bundle: reach_us
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

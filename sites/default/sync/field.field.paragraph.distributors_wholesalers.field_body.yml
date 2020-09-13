@@ -1,0 +1,21 @@
+uuid: fa901fd3-3dec-4034-b03f-13d97e3e7ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.distributors_wholesalers
+  module:
+    - text
+id: paragraph.distributors_wholesalers.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: distributors_wholesalers
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

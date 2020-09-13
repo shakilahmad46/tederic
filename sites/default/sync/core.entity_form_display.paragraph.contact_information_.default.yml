@@ -1,0 +1,32 @@
+uuid: 9935471b-6909-44dd-8a79-966a1f4563a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_information_.field_email_address_2
+    - field.field.paragraph.contact_information_.field_phone_number_2
+    - paragraphs.paragraphs_type.contact_information_
+id: paragraph.contact_information_.default
+targetEntityType: paragraph
+bundle: contact_information_
+mode: default
+content:
+  field_email_address_2:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone_number_2:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 535b5bb3-c706-4f37-b37f-132d0fa6c2fe
+langcode: en
+status: true
+dependencies: {  }
+id: left_side_description
+label: 'Technology Description'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

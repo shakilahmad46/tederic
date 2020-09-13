@@ -1,0 +1,139 @@
+uuid: 204a3b21-4260-42e1-873d-08d418bc7458
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icons
+    - paragraphs.paragraphs_type.icon
+    - paragraphs.paragraphs_type.icons
+  module:
+    - entity_reference_revisions
+id: paragraph.icons.field_icons
+field_name: field_icons
+entity_type: paragraph
+bundle: icons
+label: Icons
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon: icon
+    target_bundles_drag_drop:
+      4_smaller_blocks:
+        weight: 38
+        enabled: false
+      block:
+        weight: 39
+        enabled: false
+      cards:
+        weight: 40
+        enabled: false
+      career_contact_section:
+        weight: 41
+        enabled: false
+      careers_section:
+        weight: 42
+        enabled: false
+      carousel_image:
+        weight: 43
+        enabled: false
+      company_location:
+        weight: 44
+        enabled: false
+      company_location_hq:
+        weight: 45
+        enabled: false
+      contact_information_:
+        weight: 46
+        enabled: false
+      contact_section:
+        weight: 47
+        enabled: false
+      distributors_wholesalers:
+        weight: 48
+        enabled: false
+      events_section:
+        weight: 49
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 50
+        enabled: false
+      highlights_and_sectors:
+        weight: 51
+        enabled: false
+      hm_post:
+        weight: 52
+        enabled: false
+      homepage_map_block:
+        weight: 53
+        enabled: false
+      icon:
+        enabled: true
+        weight: 54
+      icon_section:
+        weight: 55
+        enabled: false
+      icon_slider:
+        weight: 56
+        enabled: false
+      icons:
+        weight: 57
+        enabled: false
+      image_:
+        weight: 58
+        enabled: false
+      left_column:
+        weight: 59
+        enabled: false
+      locations_section:
+        weight: 60
+        enabled: false
+      news_section:
+        weight: 61
+        enabled: false
+      o_carousel_of_images:
+        weight: 62
+        enabled: false
+      product_description_:
+        weight: 63
+        enabled: false
+      products_section:
+        weight: 64
+        enabled: false
+      retailers:
+        weight: 65
+        enabled: false
+      right_side:
+        weight: 66
+        enabled: false
+      slider:
+        weight: 67
+        enabled: false
+      slider_section:
+        weight: 68
+        enabled: false
+      solution_parts:
+        weight: 69
+        enabled: false
+      solutions_description_:
+        weight: 70
+        enabled: false
+      subcontinent_column:
+        weight: 71
+        enabled: false
+      subcontinent_column_hq:
+        weight: 72
+        enabled: false
+      tes:
+        weight: 73
+        enabled: false
+      text_l_image_r_section:
+        weight: 74
+        enabled: false
+field_type: entity_reference_revisions

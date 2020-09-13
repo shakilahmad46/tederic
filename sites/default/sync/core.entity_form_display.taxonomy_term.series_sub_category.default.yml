@@ -1,0 +1,98 @@
+uuid: 915ac281-53ad-4c33-9c78-e02cd5123287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.series_sub_category.field_back
+    - field.field.taxonomy_term.series_sub_category.field_image
+    - field.field.taxonomy_term.series_sub_category.field_parent_category
+    - field.field.taxonomy_term.series_sub_category.field_series_category_name
+    - field.field.taxonomy_term.series_sub_category.field_series_slogan_
+    - image.style.thumbnail
+    - taxonomy.vocabulary.series_sub_category
+  module:
+    - color_field
+    - image
+    - path
+    - text
+id: taxonomy_term.series_sub_category.default
+targetEntityType: taxonomy_term
+bundle: series_sub_category
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_back:
+    weight: 35
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_image:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_parent_category:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_series_category_name:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_series_slogan_:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

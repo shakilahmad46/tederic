@@ -1,0 +1,10 @@
+uuid: e1b896eb-e21c-492d-b799-bfcd3073b026
+langcode: en
+status: true
+dependencies: {  }
+id: related_section_technology_
+label: 'Related section (Technology)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 30d6117c-f834-4f44-acef-a88d0f007e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_section.field_contact_section_2
+    - paragraphs.paragraphs_type.careers_section
+  module:
+    - entity_reference_revisions
+id: paragraph.careers_section.default
+targetEntityType: paragraph
+bundle: careers_section
+mode: default
+content:
+  field_contact_section_2:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
