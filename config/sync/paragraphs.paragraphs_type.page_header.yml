@@ -1,0 +1,10 @@
+uuid: 6a274af7-bd24-430b-98c8-bfbcfd7d4eb8
+langcode: en
+status: true
+dependencies: {  }
+id: page_header
+label: 'Page Header'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

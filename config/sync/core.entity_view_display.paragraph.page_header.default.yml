@@ -1,0 +1,22 @@
+uuid: 2ccf02ab-a265-48d1-bc87-4fcf2bd3fba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_header.field_section_title
+    - paragraphs.paragraphs_type.page_header
+  module:
+    - text
+id: paragraph.page_header.default
+targetEntityType: paragraph
+bundle: page_header
+mode: default
+content:
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
