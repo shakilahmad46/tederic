@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_sections_solution
     - node.type.solution
+    - paragraphs.paragraphs_type.page_header
     - paragraphs.paragraphs_type.solution_parts
     - paragraphs.paragraphs_type.solutions_description_
   module:
@@ -26,15 +27,40 @@ settings:
     target_bundles:
       solutions_description_: solutions_description_
       solution_parts: solution_parts
+      page_header: page_header
     target_bundles_drag_drop:
+      4_smaller_blocks:
+        weight: 75
+        enabled: false
+      big_image_section:
+        weight: 76
+        enabled: false
+      block:
+        weight: 77
+        enabled: false
+      blue_background_text_section_:
+        weight: 78
+        enabled: false
+      card_regular_page_:
+        weight: 82
+        enabled: false
       cards:
         weight: 28
+        enabled: false
+      cards_section:
+        weight: 80
+        enabled: false
+      cards_section_regular_page_:
+        weight: 81
         enabled: false
       career_contact_section:
         weight: 26
         enabled: false
       careers_section:
         weight: 27
+        enabled: false
+      carousel_image:
+        weight: 85
         enabled: false
       company_location:
         weight: 28
@@ -45,8 +71,14 @@ settings:
       contact_information_:
         weight: 30
         enabled: false
+      contact_information_reach_us_:
+        weight: 89
+        enabled: false
       contact_section:
         weight: 31
+        enabled: false
+      contact_us:
+        weight: 91
         enabled: false
       distributors_wholesalers:
         weight: 32
@@ -54,8 +86,14 @@ settings:
       events_section:
         weight: 33
         enabled: false
+      from_reach_us_:
+        weight: 94
+        enabled: false
       headquarter_subsidiaries:
         weight: 34
+        enabled: false
+      highlights_and_sectors:
+        weight: 96
         enabled: false
       hm_post:
         weight: 35
@@ -63,26 +101,107 @@ settings:
       homepage_map_block:
         weight: 36
         enabled: false
+      icon:
+        weight: 99
+        enabled: false
+      icon_cards_section:
+        weight: 104
+        enabled: false
       icon_section:
         weight: 37
         enabled: false
       icon_slider:
         weight: 38
         enabled: false
+      icons:
+        weight: 100
+        enabled: false
+      icons_card:
+        weight: 101
+        enabled: false
+      icons_regular_page_:
+        weight: 102
+        enabled: false
+      icons_section_regular_page_:
+        weight: 103
+        enabled: false
       image_:
         weight: 39
+        enabled: false
+      image_l_text_r:
+        weight: 108
+        enabled: false
+      image_l_text_r_link:
+        weight: 109
+        enabled: false
+      left_column:
+        weight: 110
+        enabled: false
+      left_side_:
+        weight: 111
+        enabled: false
+      left_side_description:
+        weight: 112
         enabled: false
       locations_section:
         weight: 40
         enabled: false
+      metadata:
+        weight: 114
+        enabled: false
+      mission_section:
+        weight: 115
+        enabled: false
       news_section:
         weight: 41
+        enabled: false
+      o_carousel_of_images:
+        weight: 117
+        enabled: false
+      page_header:
+        enabled: true
+        weight: 118
+      product_description_:
+        weight: 121
         enabled: false
       products_section:
         weight: 42
         enabled: false
+      products_section_re:
+        weight: 120
+        enabled: false
+      quote_section:
+        weight: 122
+        enabled: false
+      related_block_section:
+        weight: 123
+        enabled: false
+      related_section:
+        weight: 124
+        enabled: false
+      related_section_technology_:
+        weight: 125
+        enabled: false
+      related_solution:
+        weight: 126
+        enabled: false
+      related_technology:
+        weight: 127
+        enabled: false
       retailers:
         weight: 43
+        enabled: false
+      right_side:
+        weight: 129
+        enabled: false
+      right_side_contact:
+        weight: 130
+        enabled: false
+      right_side_description:
+        weight: 131
+        enabled: false
+      series_subcategory_card:
+        weight: 132
         enabled: false
       slider:
         weight: 44
@@ -102,10 +221,34 @@ settings:
       subcontinent_column_hq:
         weight: 48
         enabled: false
+      technology_2_columns_section:
+        weight: 139
+        enabled: false
       tes:
         weight: 49
         enabled: false
+      text_image_section:
+        weight: 141
+        enabled: false
+      text_l_image_r_hotline_number:
+        weight: 142
+        enabled: false
       text_l_image_r_section:
         weight: 50
+        enabled: false
+      text_l_image_r_section_events_:
+        weight: 144
+        enabled: false
+      text_l_image_r_section_technolog:
+        weight: 145
+        enabled: false
+      text_l_image_r_support_:
+        weight: 146
+        enabled: false
+      text_section:
+        weight: 147
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 148
         enabled: false
 field_type: entity_reference_revisions
