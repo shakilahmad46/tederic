@@ -1,0 +1,16 @@
+{% set icon = file_url(paragraph.field_icon_image_1.entity.fileuri) %}
+{% set img = file_url(paragraph.field_image.entity.fileuri) %}
+
+<div class="automo au-sec1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <h2><span><img src="{{icon}}" alt="auto-icon1"></span>{{content.field_title}}</h2>
+        {{ content.field_description }}
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <img src="{{img}}" alt="automotive-img1">
+      </div>
+    </div>
+  </div>
+</div>

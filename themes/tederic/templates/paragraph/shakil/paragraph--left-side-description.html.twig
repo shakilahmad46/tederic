@@ -7,7 +7,9 @@
                 {{ content.field_section_title}}
                  {{ content.field_description|raw }}
                 {{ content.field_text_|raw }}
+                {% if content.field_lin|render %}
                 <a class="broucher" href="{{ file_link }}">{{ content.field_lin|raw }}<span><i class="fa fa-download"></i></span></a>
+                {% endif %}
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
             {{content.field_carousel_of_images_2}}

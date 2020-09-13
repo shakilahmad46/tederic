@@ -1,0 +1,9 @@
+{% set img = file_url(paragraph.field_image.entity.fileuri) %}
+<div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="autoboxes">
+        <img src="{{ img }}" alt="auto-box1">
+        <h3>{{ content.field_title }}</h3>
+        <p>{{ content.field_description_2 }}</p>
+        <a class="btn-gen" href="">Read More<span><i class="fa fa-angle-right"></i></span></a>
+      </div>
+      </div>
