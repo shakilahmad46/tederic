@@ -1,0 +1,10 @@
+uuid: eeb05cbd-967f-4644-8ce8-b6bc37ef6565
+langcode: en
+status: true
+dependencies: {  }
+id: text_image_section
+label: 'Text + Image section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

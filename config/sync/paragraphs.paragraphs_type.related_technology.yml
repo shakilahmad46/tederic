@@ -1,0 +1,10 @@
+uuid: 97f96e90-7779-495b-ac8e-f09f1096c906
+langcode: en
+status: true
+dependencies: {  }
+id: related_technology
+label: 'Related Technology'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

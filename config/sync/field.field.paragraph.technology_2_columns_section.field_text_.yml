@@ -1,0 +1,21 @@
+uuid: a0aacfc7-89be-41b7-a6ca-983f5fc7cb53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_
+    - paragraphs.paragraphs_type.technology_2_columns_section
+  module:
+    - text
+id: paragraph.technology_2_columns_section.field_text_
+field_name: field_text_
+entity_type: paragraph
+bundle: technology_2_columns_section
+label: 'Text Right'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

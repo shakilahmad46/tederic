@@ -1,0 +1,19 @@
+uuid: 3752ed48-5f76-450c-9f2c-bfde4c03bed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle_text
+    - paragraphs.paragraphs_type.icons_regular_page_
+id: paragraph.icons_regular_page_.field_subtitle_text
+field_name: field_subtitle_text
+entity_type: paragraph
+bundle: icons_regular_page_
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

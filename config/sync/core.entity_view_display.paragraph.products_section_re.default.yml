@@ -1,0 +1,33 @@
+uuid: 0bfe264f-24ae-4af0-b624-be670e4cad25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section_re.field_section_title
+    - field.field.paragraph.products_section_re.field_series_sub_category_2
+    - paragraphs.paragraphs_type.products_section_re
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.products_section_re.default
+targetEntityType: paragraph
+bundle: products_section_re
+mode: default
+content:
+  field_section_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_series_sub_category_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

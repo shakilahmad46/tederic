@@ -1,0 +1,58 @@
+uuid: 033ce557-7bb1-4ed0-846b-45e82bfcc5c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_slider
+    - paragraphs.paragraphs_type.icon_section
+    - paragraphs.paragraphs_type.icon_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.icon_section.field_icon_slider
+field_name: field_icon_slider
+entity_type: paragraph
+bundle: icon_section
+label: 'Icon Slider'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_slider: icon_slider
+    target_bundles_drag_drop:
+      contact_section:
+        weight: 11
+        enabled: false
+      events_section:
+        weight: 12
+        enabled: false
+      hm_post:
+        weight: 13
+        enabled: false
+      homepage_map_block:
+        weight: 14
+        enabled: false
+      icon_section:
+        weight: 15
+        enabled: false
+      icon_slider:
+        enabled: true
+        weight: 16
+      news_section:
+        weight: 17
+        enabled: false
+      products_section:
+        weight: 18
+        enabled: false
+      slider:
+        weight: 19
+        enabled: false
+      slider_section:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

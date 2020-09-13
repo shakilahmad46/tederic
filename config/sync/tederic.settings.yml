@@ -1,0 +1,41 @@
+schemas:
+  bootstrap: 8000
+  tederic: 8000
+logo:
+  path: 'public://logo.png'
+  url: ''
+  use_default: false
+show_social_icon: 0
+facebook_url: ''
+google_plus_url: ''
+twitter_url: ''
+linkedin_url: ''
+pinterest_url: ''
+rss_url: ''
+show_credit_link: 0
+no_of_slides: '2'
+show_slideshow: 1
+slide_image_path1:
+  - '1'
+slide_title_1: 'We work to pursue sustainable solutions, for a better world'
+slide_url_1: '@'
+slide_image_path2:
+  - '2'
+slide_title_2: 'Test Title'
+slide_url_2: '#'
+slide_image_path3: {  }
+slide_title_3: ''
+slide_url_3: ''
+slide_image_path4: {  }
+slide_title_4: ''
+slide_url_4: ''
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://capitalsofttech.com/tederic/themes/bootstrap/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

@@ -788,7 +788,7 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 //$config_directories['sync'] = 'sites/default/files/config__debts-cRwBfiq6nfX0TYluFqn8sAHyob6g1zeyLYNVvoxFFcS11tA-fxNk-2r57qRVvhRpZDw/sync';
-$config_directories['sync'] = 'sites/default/sync';
+$config_directories['sync'] = 'config/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
 // $settings['cache']['bins']['render'] = 'cache.backend.null';

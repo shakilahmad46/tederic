@@ -1,0 +1,25 @@
+uuid: d3fd6e10-8201-465f-ae3e-2e09f700b971
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f97f05ed-151f-4557-8c18-06b478e7a64f'
+  module:
+    - block_content
+  theme:
+    - tederic
+id: contactussection
+theme: tederic
+region: hidden
+weight: -4
+provider: null
+plugin: 'block_content:f97f05ed-151f-4557-8c18-06b478e7a64f'
+settings:
+  id: 'block_content:f97f05ed-151f-4557-8c18-06b478e7a64f'
+  label: 'Contact Us Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

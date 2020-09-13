@@ -1,0 +1,53 @@
+uuid: 560c26e4-0f14-4195-ac1e-3295cb7d1ff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_location_hq.field_ci
+    - field.field.paragraph.company_location_hq.field_company
+    - field.field.paragraph.company_location_hq.field_contact_information
+    - field.field.paragraph.company_location_hq.field_title
+    - paragraphs.paragraphs_type.company_location_hq
+  module:
+    - entity_reference_revisions
+id: paragraph.company_location_hq.default
+targetEntityType: paragraph
+bundle: company_location_hq
+mode: default
+content:
+  field_ci:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_company:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_information:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

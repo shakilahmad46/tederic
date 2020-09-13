@@ -1,0 +1,19 @@
+uuid: 9da92f6a-a31a-47fe-9f7b-44778266c0dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_email_address_block
+field_name: field_email_address_block
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

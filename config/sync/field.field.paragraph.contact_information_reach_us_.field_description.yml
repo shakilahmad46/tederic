@@ -1,0 +1,21 @@
+uuid: b1ff5b30-9c28-4e33-8e18-fd006cc2c5ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.contact_information_reach_us_
+  module:
+    - text
+id: paragraph.contact_information_reach_us_.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: contact_information_reach_us_
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

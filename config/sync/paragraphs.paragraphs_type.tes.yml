@@ -1,0 +1,10 @@
+uuid: df13e8cc-0e31-4bc9-9c30-ac35594a2a12
+langcode: en
+status: true
+dependencies: {  }
+id: tes
+label: 'Text Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

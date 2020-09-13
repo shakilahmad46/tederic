@@ -1,0 +1,29 @@
+uuid: a7c0eb44-cc40-4b7a-8d5e-f0c6c31f5443
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_series
+    - node.type.product
+    - taxonomy.vocabulary.series_category
+id: node.product.field_product_series
+field_name: field_product_series
+entity_type: node
+bundle: product
+label: 'Product Series'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series_category: series_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

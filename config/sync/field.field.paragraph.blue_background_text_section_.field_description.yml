@@ -1,0 +1,21 @@
+uuid: 4732aa3d-5a84-47bb-9ab2-3e49ad4ea351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.blue_background_text_section_
+  module:
+    - text
+id: paragraph.blue_background_text_section_.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: blue_background_text_section_
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

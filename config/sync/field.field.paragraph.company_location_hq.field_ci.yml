@@ -1,0 +1,19 @@
+uuid: cafac9a1-20b7-4a44-9ff9-4b190f6cce6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ci
+    - paragraphs.paragraphs_type.company_location_hq
+id: paragraph.company_location_hq.field_ci
+field_name: field_ci
+entity_type: paragraph
+bundle: company_location_hq
+label: 'Country Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

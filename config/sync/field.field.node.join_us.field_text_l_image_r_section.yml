@@ -1,0 +1,102 @@
+uuid: 98f8c6aa-4257-40e4-b568-bbec70c9b1b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_l_image_r_section
+    - node.type.join_us
+    - paragraphs.paragraphs_type.careers_section
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - entity_reference_revisions
+id: node.join_us.field_text_l_image_r_section
+field_name: field_text_l_image_r_section
+entity_type: node
+bundle: join_us
+label: Sections
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      careers_section: careers_section
+      text_l_image_r_section: text_l_image_r_section
+    target_bundles_drag_drop:
+      career_contact_section:
+        weight: 25
+        enabled: false
+      careers_section:
+        enabled: true
+        weight: 26
+      company_location:
+        weight: 23
+        enabled: false
+      company_location_hq:
+        weight: 24
+        enabled: false
+      contact_information_:
+        weight: 25
+        enabled: false
+      contact_section:
+        weight: 26
+        enabled: false
+      distributors_wholesalers:
+        weight: 27
+        enabled: false
+      events_section:
+        weight: 28
+        enabled: false
+      headquarter_subsidiaries:
+        weight: 29
+        enabled: false
+      hm_post:
+        weight: 30
+        enabled: false
+      homepage_map_block:
+        weight: 31
+        enabled: false
+      icon_section:
+        weight: 32
+        enabled: false
+      icon_slider:
+        weight: 33
+        enabled: false
+      image_:
+        weight: 34
+        enabled: false
+      locations_section:
+        weight: 35
+        enabled: false
+      news_section:
+        weight: 36
+        enabled: false
+      products_section:
+        weight: 37
+        enabled: false
+      retailers:
+        weight: 38
+        enabled: false
+      slider:
+        weight: 39
+        enabled: false
+      slider_section:
+        weight: 40
+        enabled: false
+      subcontinent_column:
+        weight: 41
+        enabled: false
+      subcontinent_column_hq:
+        weight: 42
+        enabled: false
+      tes:
+        weight: 43
+        enabled: false
+      text_l_image_r_section:
+        enabled: true
+        weight: 44
+field_type: entity_reference_revisions

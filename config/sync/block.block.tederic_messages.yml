@@ -1,0 +1,22 @@
+uuid: d33f9bf5-708d-47fa-9489-0b8608d2a22f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tederic
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tederic_messages
+theme: tederic
+region: hidden
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

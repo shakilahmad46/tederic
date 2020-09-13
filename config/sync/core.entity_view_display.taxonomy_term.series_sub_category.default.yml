@@ -1,0 +1,71 @@
+uuid: 2107a9f0-f45d-4a2d-83e1-a5e11a1f1194
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.series_sub_category.field_back
+    - field.field.taxonomy_term.series_sub_category.field_image
+    - field.field.taxonomy_term.series_sub_category.field_parent_category
+    - field.field.taxonomy_term.series_sub_category.field_series_category_name
+    - field.field.taxonomy_term.series_sub_category.field_series_slogan_
+    - taxonomy.vocabulary.series_sub_category
+  module:
+    - color_field
+    - image
+    - text
+id: taxonomy_term.series_sub_category.default
+targetEntityType: taxonomy_term
+bundle: series_sub_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_back:
+    weight: 5
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_parent_category:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_series_category_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_series_slogan_:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

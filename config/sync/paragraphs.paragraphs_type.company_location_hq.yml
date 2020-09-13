@@ -1,0 +1,10 @@
+uuid: cf8ada2d-1a11-486f-8126-cc701368ee05
+langcode: en
+status: true
+dependencies: {  }
+id: company_location_hq
+label: 'Company Location'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

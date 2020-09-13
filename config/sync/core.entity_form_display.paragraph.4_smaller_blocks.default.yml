@@ -1,0 +1,29 @@
+uuid: 1bb98556-a0c7-4fcf-84fc-5fa60251c703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.4_smaller_blocks.field_block
+    - paragraphs.paragraphs_type.4_smaller_blocks
+  module:
+    - paragraphs
+id: paragraph.4_smaller_blocks.default
+targetEntityType: paragraph
+bundle: 4_smaller_blocks
+mode: default
+content:
+  field_block:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

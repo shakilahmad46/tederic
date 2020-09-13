@@ -1,0 +1,10 @@
+uuid: 34b51a73-0854-43c6-97a3-bd7bff21a241
+langcode: en
+status: true
+dependencies: {  }
+id: vertical_carousel_text_section
+label: 'Vertical Carousel + Text section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

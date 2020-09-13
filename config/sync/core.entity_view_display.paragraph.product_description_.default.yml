@@ -1,0 +1,43 @@
+uuid: cdd87792-b040-4f56-902f-bfdc64106e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_description_.field_4_smaller_blocks
+    - field.field.paragraph.product_description_.field_description
+    - field.field.paragraph.product_description_.field_download_document
+    - paragraphs.paragraphs_type.product_description_
+  module:
+    - entity_reference_revisions
+    - file
+    - text
+id: paragraph.product_description_.default
+targetEntityType: paragraph
+bundle: product_description_
+mode: default
+content:
+  field_4_smaller_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_download_document:
+    weight: 3
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

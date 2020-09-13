@@ -1,0 +1,10 @@
+uuid: 39301362-ff03-4a4f-bbc7-b3d0c3480467
+langcode: en
+status: true
+dependencies: {  }
+id: technology_2_columns_section
+label: 'Technology 2 columns section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

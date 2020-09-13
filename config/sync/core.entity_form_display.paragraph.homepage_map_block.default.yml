@@ -1,0 +1,64 @@
+uuid: 3d8d5241-fb54-4a11-99c1-98a865f76394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_map_block.field_description
+    - field.field.paragraph.homepage_map_block.field_link
+    - field.field.paragraph.homepage_map_block.field_map
+    - field.field.paragraph.homepage_map_block.field_subtitle
+    - field.field.paragraph.homepage_map_block.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.homepage_map_block
+  module:
+    - image
+    - link
+    - text
+id: paragraph.homepage_map_block.default
+targetEntityType: paragraph
+bundle: homepage_map_block
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_map:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

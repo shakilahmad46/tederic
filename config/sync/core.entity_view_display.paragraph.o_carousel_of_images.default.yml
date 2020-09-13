@@ -1,0 +1,24 @@
+uuid: cf30052d-a527-4d34-8cbf-0fa2fa7c99c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.o_carousel_of_images.field_carousel_image
+    - paragraphs.paragraphs_type.o_carousel_of_images
+  module:
+    - entity_reference_revisions
+id: paragraph.o_carousel_of_images.default
+targetEntityType: paragraph
+bundle: o_carousel_of_images
+mode: default
+content:
+  field_carousel_image:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

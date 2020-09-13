@@ -1,0 +1,21 @@
+uuid: 3c3c9002-375f-42ae-9b92-6b4ac290bf7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.contact_information_reach_us_
+  module:
+    - text
+id: paragraph.contact_information_reach_us_.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: contact_information_reach_us_
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

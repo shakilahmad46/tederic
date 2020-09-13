@@ -1,0 +1,19 @@
+uuid: 962022bc-e1c6-418a-970b-29af7250c64e
+langcode: en
+status: true
+dependencies:
+  module:
+    - font_field_icon
+    - paragraphs
+id: paragraph.field_icon
+field_name: field_icon
+entity_type: paragraph
+type: font_field_icon
+settings: {  }
+module: font_field_icon
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

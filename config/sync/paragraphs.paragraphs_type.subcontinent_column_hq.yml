@@ -1,0 +1,10 @@
+uuid: 83b46a1e-cc71-4cb3-b1a5-e0419237138d
+langcode: en
+status: true
+dependencies: {  }
+id: subcontinent_column_hq
+label: 'Subcontinent column'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
