@@ -4,13 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.solutions_description_.field_description
-    - field.field.paragraph.solutions_description_.field_icon
+    - field.field.paragraph.solutions_description_.field_icon_image_1
     - field.field.paragraph.solutions_description_.field_image
     - field.field.paragraph.solutions_description_.field_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.solutions_description_
   module:
-    - font_field_icon
     - image
     - text
 id: paragraph.solutions_description_.default
@@ -26,11 +25,13 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_icon:
-    weight: 0
-    settings: {  }
+  field_icon_image_1:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: FontFieldIconDefaultWidget
+    type: image_image
     region: content
   field_image:
     weight: 3
@@ -41,13 +42,18 @@ content:
     type: image_image
     region: content
   field_title:
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

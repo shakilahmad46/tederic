@@ -4,37 +4,34 @@ status: true
 dependencies:
   config:
     - field.field.node.solution_part.body
+    - field.field.node.solution_part.field_main_image
     - field.field.node.solution_part.field_sections_sp
+    - field.field.node.solution_part.field_solution
     - node.type.solution_part
   module:
     - entity_reference_revisions
-    - text
     - user
 id: node.solution_part.default
 targetEntityType: node
 bundle: solution_part
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_sections_sp:
     type: entity_reference_revisions_entity_view
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
+  field_main_image: true
+  field_solution: true
   langcode: true

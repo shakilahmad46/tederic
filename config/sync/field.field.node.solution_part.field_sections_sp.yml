@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_sections_sp
     - node.type.solution_part
+    - paragraphs.paragraphs_type.left_side_description
     - paragraphs.paragraphs_type.o_carousel_of_images
     - paragraphs.paragraphs_type.related_block_section
   module:
@@ -26,6 +27,7 @@ settings:
     target_bundles:
       o_carousel_of_images: o_carousel_of_images
       related_block_section: related_block_section
+      left_side_description: left_side_description
     target_bundles_drag_drop:
       4_smaller_blocks:
         weight: 74
@@ -139,8 +141,8 @@ settings:
         weight: 110
         enabled: false
       left_side_description:
+        enabled: true
         weight: 111
-        enabled: false
       locations_section:
         weight: 46
         enabled: false
@@ -156,6 +158,9 @@ settings:
       o_carousel_of_images:
         enabled: true
         weight: 48
+      page_header:
+        weight: 75
+        enabled: false
       product_description_:
         weight: 117
         enabled: false
@@ -173,6 +178,9 @@ settings:
         weight: 73
       related_section:
         weight: 121
+        enabled: false
+      related_section_technology_:
+        weight: 125
         enabled: false
       related_solution:
         weight: 122
@@ -216,9 +224,6 @@ settings:
       technology_2_columns_section:
         weight: 135
         enabled: false
-      technology_description:
-        weight: 136
-        enabled: false
       tes:
         weight: 57
         enabled: false
@@ -233,6 +238,9 @@ settings:
         enabled: false
       text_l_image_r_section_events_:
         weight: 141
+        enabled: false
+      text_l_image_r_section_technolog:
+        weight: 145
         enabled: false
       text_l_image_r_support_:
         weight: 142

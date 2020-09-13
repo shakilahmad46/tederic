@@ -5,36 +5,31 @@ dependencies:
   config:
     - field.field.node.solution.body
     - field.field.node.solution.field_sections_solution
+    - field.field.node.solution.field_solution_icon
     - node.type.solution
   module:
     - entity_reference_revisions
-    - text
     - user
 id: node.solution.default
 targetEntityType: node
 bundle: solution
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_sections_solution:
     type: entity_reference_revisions_entity_view
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
+  field_solution_icon: true
   langcode: true
