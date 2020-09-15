@@ -1,0 +1,19 @@
+uuid: 53362beb-14b5-465c-a805-4062b7f13f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.reache_us
+    - field.storage.contact_message.field_email
+id: contact_message.reache_us.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: reache_us
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

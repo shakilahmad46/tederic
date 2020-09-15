@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.contact_information_reach_us_.field_description
     - field.field.paragraph.contact_information_reach_us_.field_email_address_block
     - field.field.paragraph.contact_information_reach_us_.field_image
+    - field.field.paragraph.contact_information_reach_us_.field_map
     - field.field.paragraph.contact_information_reach_us_.field_phone_number_block
     - field.field.paragraph.contact_information_reach_us_.field_section_title
     - paragraphs.paragraphs_type.contact_information_reach_us_
@@ -19,21 +20,30 @@ mode: default
 content:
   field_description:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_email_address_block:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
     weight: 4
-    label: above
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_map:
+    weight: 5
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -42,14 +52,14 @@ content:
     region: content
   field_phone_number_block:
     weight: 3
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_section_title:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

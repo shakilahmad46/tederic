@@ -7,6 +7,8 @@ dependencies:
     - node.type.reach_us
     - paragraphs.paragraphs_type.contact_information_reach_us_
     - paragraphs.paragraphs_type.from_reach_us_
+    - paragraphs.paragraphs_type.page_header
+    - paragraphs.paragraphs_type.reache_us_description_and_form
   module:
     - entity_reference_revisions
 id: node.reach_us.field_sections_reachus
@@ -26,6 +28,8 @@ settings:
     target_bundles:
       from_reach_us_: from_reach_us_
       contact_information_reach_us_: contact_information_reach_us_
+      page_header: page_header
+      reache_us_description_and_form: reache_us_description_and_form
     target_bundles_drag_drop:
       4_smaller_blocks:
         weight: 72
@@ -156,6 +160,9 @@ settings:
       o_carousel_of_images:
         weight: 112
         enabled: false
+      page_header:
+        enabled: true
+        weight: 119
       product_description_:
         weight: 113
         enabled: false
@@ -168,8 +175,17 @@ settings:
       quote_section:
         weight: 116
         enabled: false
+      reache_us_description_and_form:
+        enabled: true
+        weight: 124
+      related_block_section:
+        weight: 125
+        enabled: false
       related_section:
         weight: 117
+        enabled: false
+      related_section_technology_:
+        weight: 127
         enabled: false
       related_solution:
         weight: 118
@@ -213,9 +229,6 @@ settings:
       technology_2_columns_section:
         weight: 131
         enabled: false
-      technology_description:
-        weight: 132
-        enabled: false
       tes:
         weight: 133
         enabled: false
@@ -230,6 +243,9 @@ settings:
         enabled: false
       text_l_image_r_section_events_:
         weight: 137
+        enabled: false
+      text_l_image_r_section_technolog:
+        weight: 147
         enabled: false
       text_l_image_r_support_:
         weight: 138

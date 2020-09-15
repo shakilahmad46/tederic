@@ -1,0 +1,19 @@
+uuid: 74ea4058-115f-4bc8-a25d-7c3664e84beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.reache_us
+    - field.storage.contact_message.field_first_name
+id: contact_message.reache_us.field_first_name
+field_name: field_first_name
+entity_type: contact_message
+bundle: reache_us
+label: 'First Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

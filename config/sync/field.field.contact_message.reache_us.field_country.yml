@@ -1,0 +1,21 @@
+uuid: 3c2ca0ff-48c6-4b7b-ad54-f9cbfa2fee75
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.reache_us
+    - field.storage.contact_message.field_country
+  module:
+    - options
+id: contact_message.reache_us.field_country
+field_name: field_country
+entity_type: contact_message
+bundle: reache_us
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

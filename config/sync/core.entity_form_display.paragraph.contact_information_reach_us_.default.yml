@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.contact_information_reach_us_.field_description
     - field.field.paragraph.contact_information_reach_us_.field_email_address_block
     - field.field.paragraph.contact_information_reach_us_.field_image
+    - field.field.paragraph.contact_information_reach_us_.field_map
     - field.field.paragraph.contact_information_reach_us_.field_phone_number_block
     - field.field.paragraph.contact_information_reach_us_.field_section_title
     - image.style.thumbnail
@@ -36,6 +37,14 @@ content:
     region: content
   field_image:
     weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_map:
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

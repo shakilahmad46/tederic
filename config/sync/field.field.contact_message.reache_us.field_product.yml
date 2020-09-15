@@ -1,0 +1,28 @@
+uuid: 41613446-76ad-4398-b21d-552eb42aeadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.reache_us
+    - field.storage.contact_message.field_product
+    - node.type.product
+id: contact_message.reache_us.field_product
+field_name: field_product
+entity_type: contact_message
+bundle: reache_us
+label: 'Area of interest'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

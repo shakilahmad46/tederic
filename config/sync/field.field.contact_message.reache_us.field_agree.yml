@@ -1,0 +1,23 @@
+uuid: f0be9cb7-57c3-4d7a-9060-16c24b0e2288
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.reache_us
+    - field.storage.contact_message.field_agree
+id: contact_message.reache_us.field_agree
+field_name: field_agree
+entity_type: contact_message
+bundle: reache_us
+label: ' I accept the processing of my personal data provide here. '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
