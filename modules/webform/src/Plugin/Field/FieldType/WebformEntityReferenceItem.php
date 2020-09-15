@@ -8,7 +8,6 @@ use Drupal\Core\Field\Plugin\Field\FieldType\EntityReferenceItem;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\TypedData\DataDefinition;
-use Drupal\webform\WebformInterface;
 
 /**
  * Defines the 'webform_entity_reference' entity field type.
@@ -34,18 +33,6 @@ class WebformEntityReferenceItem extends EntityReferenceItem {
     return [
       'target_type' => 'webform',
     ] + parent::defaultStorageSettings();
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function defaultFieldSettings() {
-    return [
-      'default_data' => '',
-      'status' => WebformInterface::STATUS_OPEN,
-      'open' => '',
-      'close' => '',
-    ] + parent::defaultFieldSettings();
   }
 
   /**
@@ -125,8 +112,10 @@ class WebformEntityReferenceItem extends EntityReferenceItem {
    * {@inheritdoc}
    */
   public function getSettableOptions(AccountInterface $account = NULL) {
+    // Get webform options grouped by category.
     /** @var \Drupal\webform\WebformEntityStorageInterface $webform_storage */
     $webform_storage = \Drupal::service('entity_type.manager')->getStorage('webform');
     return $webform_storage->getOptions(FALSE);
   }
+
 }

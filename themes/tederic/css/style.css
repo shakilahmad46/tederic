@@ -1709,7 +1709,7 @@ background-color: #f1f1f3;
     height: inherit !important;
 }
 
-.hm-pro.reach1 form {
+.hm-pro.reach1 .form{
     float: left;
     width: 100%;
     background-color: #fff;

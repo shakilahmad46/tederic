@@ -23,12 +23,14 @@ class ViewsReferencePager extends PluginBase implements ViewsReferenceSettingInt
   /**
    * {@inheritdoc}
    */
-  public function alterFormField(&$form_field) {
+  public function alterFormField(array &$form_field) {
     $form_field['#type'] = 'select';
     $form_field['#options'] = [
-      'some' => $this->t('Hide'),
-      'full' => $this->t('Full'),
-      'mini' => $this->t('Mini'),
+      '' => $this->t('Default settings'),
+      'full' => $this->t('Full pager'),
+      'mini' => $this->t('Mini pager'),
+      'some' => $this->t('Hide pager (display a fixed number of items)'),
+      'none' => $this->t('Hide pager (display all items)'),
     ];
     $form_field['#weight'] = 35;
   }

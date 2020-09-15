@@ -1,0 +1,30 @@
+<div class="hm-pro reach2">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        {{content.field_title}}
+        {{content.field_description}}
+        <ul>
+				{% if content.field_email_address_block|render %}
+          
+          {{content.field_email_address_block}}
+          
+				{% endif %}
+
+				{% if content.field_phone_number_block|render  %}
+
+          
+          {{content.field_phone_number_block}}
+          
+					{% endif %}
+
+          <li>{{ content.field_map}}</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 no-pad">
+           {{ content.field_image }}
+      </div>
+    </div>
+  </div>
+</div>
